@@ -27,3 +27,5 @@ Build a website using Django that has access to our database.
 Build code that lets people provide inputs (a city, arrest rates for certain types of crime, subsequent crime rates, etc.), then presents them with the associated correlations.
 By the end of week 10: finding the most meaningful correlations, finding fun correlations, and adding features.
 Our goal is to finish by week 8 -- since we’re likely to run into problems, we’re aiming for an early finish with a couple weeks to fix issues or to add more features.
+
+asdf

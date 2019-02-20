@@ -240,7 +240,29 @@ def get_city_data(city_state, csv_filename):
     driver.close()
 
 def get_all_cities(csv_filename):
-    cities = ['Anchorage, AK', 'Mobile, AL']
+    cities = ['Anchorage, AK', 'Mobile, AL', 'Chandler, AZ', 'Mesa, AZ', \
+             'Anaheim, CA', 'Bakersfield, CA', 'Chula Vista, CA', 'Long ' +\
+             'Beach, CA', 'Oakland, CA', 'Riverside, CA', 'Sacramento, CA', \
+             'Santa Ana, CA', 'Stockton, CA', 'Aurora, CO', 'Colorago ' +\
+             'Springs, CO', 'Miami, FL', 'Orlando, FL', 'Tampa, FL', \
+             'Atlanta, GA', 'Fort Wayne, IN', 'Wichita, KS', 'Lexington, KY', \
+             'Louisville, KY', 'New Orleans, LA', 'Minneapolis, MN', 'St. ' +\
+             'Paul, MN', 'St. Louis, MO', 'Greensboro, NC', 'Raleigh, NC', \
+             'Lincoln, NE', 'Omaha, NE', 'Jersey City, NJ', 'Newark, NJ', \
+             'Henderson, NV', 'Buffalo, NY', 'Cincinnati, OH', 'Cleveland, '+\
+              'OH', 'Toledo, OH', 'Tulsa, OK', 'Pittsburgh, PA', 'Arlington' +\
+             ', TX', 'Corpus Christi, TX', 'Laredo, TX', 'Plano, TX', \
+             'Virginia Beach, VA', 'Tuscon, AZ', 'Fresno, CA', 'San ' +\
+             'Francisco, CA', 'Denver, CO', 'Washington, DC', 'Jacksonville' +\
+             ', FL', 'Honolulu, HI', 'Indianapolis, IN', 'Louisville, KY', \
+             'Boston, MA', 'Baltimore, MD', 'Detroit, MI', 'Charlotte, NC', \
+             'Albuquerque, NM', 'Columbus, OH', 'Oklahoma City, OK', \
+             'Portland, OR', 'Memphis, TN', 'Nashville, TN', 'Austin, TX', \
+             'Fort Worth, TX', 'El Paso, TX', 'Seattle, WA', 'Milwaukee, WI', \
+             'Phoenix, AZ', 'Los Angeles, CA', 'San Diego, CA', 'San Jose, ' +\
+             'CA', 'Chicago, IL', 'Las Vegas, NV', 'New York City, NY', \
+             'Philadelphia, PA', 'Dallas, TX', 'Houston, TX', 'San Antonio,' +\
+             ' TX']
     head = ['Year', 'City', 'Population', 'Violent Crime'+\
             ' Total', 'Murder and Nonnegligent Manslaughter', 'Rape', \
             'Robbery', 'Aggravated Assault', 'Property Crime Total', \

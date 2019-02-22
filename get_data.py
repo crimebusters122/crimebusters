@@ -111,7 +111,7 @@ def get_city_data(city_state, csv_filename):
     city_agencies = {'Colorado Springs, CO': 'Colorado Springs', \
                     'Washington, DC': 'Washington Metropolitan Police Dept', \
                     'Jacksonville, FL': 'Jacksonville', 'Lexington, KY': \
-                    'Lexington-Fayette County Police Dept', 'Baltimore, MD': \
+                    'Lexington-Fayette County Police Department', 'Baltimore, MD': \
                     'Baltimore City Police Dept', 'Las Vegas, NV': 'Las '+\
                     'Vegas Metropolitan Police Department', 'Charlotte, NC': \
                     'Charlotte-Mecklenburg Police Department', \
@@ -140,11 +140,13 @@ def get_city_data(city_state, csv_filename):
     city = sep[0]
     state_key = sep[1].strip()
     state = state_keys[state_key]
-    if city not in city_agencies.keys():
+    print(city_state)
+    if city_state not in city_agencies.keys():
         agency = city + ' Police Dept'
     else:
-        agency = city_agencies[city]
+        agency = city_agencies[city_state]
     driver = webdriver.Firefox()
+    driver.implicitly_wait(3)
     driver.get('https://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJuris.cfm')
     c = "[contains(text(), '" + state + "')]"
     state_obj = driver.find_elements_by_xpath("//select[@name='StateId']/*"+c)\
@@ -161,8 +163,9 @@ def get_city_data(city_state, csv_filename):
     next_page = driver.find_elements_by_xpath("//input[@name='NextPage'"+\
                     " and @type='submit']")[0]
     next_page.click()
-    if driver.find_elements_by_class_name('acsCloseButton acsAbandonButton ') != []:
-        x_button = driver.find_elements_by_class_name('acsCloseButton acsAbandonButton ')[0]
+    if driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']") != []:
+        x_button = driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']")[0]
+        print(x_button)
         x_button.click()
     c_2 = "[contains(text(), '" + agency + "')]"
     agency_obj = driver.find_elements_by_xpath("//select[@name="+\
@@ -182,8 +185,8 @@ def get_city_data(city_state, csv_filename):
     next_next_pg = driver.find_elements_by_xpath("//input[@name='NextPage'"+\
                 " and @type='submit']")[0]
     next_next_pg.click()
-    if driver.find_elements_by_class_name('acsCloseButton acsAbandonButton ') != []:
-        x_button = driver.find_elements_by_class_name('acsCloseButton acsAbandonButton ')[0]
+    if driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']") != []:
+        x_button = driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']")[0]
         x_button.click()
     yrs = driver.find_elements_by_xpath("//td[@headers='year']")
     pops = driver.find_elements_by_xpath("//td[@headers='population']")
@@ -243,11 +246,11 @@ def get_all_cities(csv_filename):
     cities = ['Anchorage, AK', 'Mobile, AL', 'Chandler, AZ', 'Mesa, AZ', \
              'Anaheim, CA', 'Bakersfield, CA', 'Chula Vista, CA', 'Long ' +\
              'Beach, CA', 'Oakland, CA', 'Riverside, CA', 'Sacramento, CA', \
-             'Santa Ana, CA', 'Stockton, CA', 'Aurora, CO', 'Colorago ' +\
+             'Santa Ana, CA', 'Stockton, CA', 'Aurora, CO', 'Colorado ' +\
              'Springs, CO', 'Miami, FL', 'Orlando, FL', 'Tampa, FL', \
-             'Atlanta, GA', 'Fort Wayne, IN', 'Wichita, KS', 'Lexington, KY', \
-             'Louisville, KY', 'New Orleans, LA', 'Minneapolis, MN', 'St. ' +\
-             'Paul, MN', 'St. Louis, MO', 'Greensboro, NC', 'Raleigh, NC', \
+             'Atlanta, GA', 'Fort Wayne, IN', 'Wichita, KS', 'Louisville, KY',\
+              'New Orleans, LA', 'Minneapolis, MN', 'St. Paul, MN', \
+             'St. Louis, MO', 'Greensboro, NC', 'Raleigh, NC', \
              'Lincoln, NE', 'Omaha, NE', 'Jersey City, NJ', 'Newark, NJ', \
              'Henderson, NV', 'Buffalo, NY', 'Cincinnati, OH', 'Cleveland, '+\
               'OH', 'Toledo, OH', 'Tulsa, OK', 'Pittsburgh, PA', 'Arlington' +\
@@ -276,7 +279,3 @@ def get_all_cities(csv_filename):
         csv_writer.writerow(head)
     for city in cities:
         get_city_data(city, csv_filename)
-
-    
-
-

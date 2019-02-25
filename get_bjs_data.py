@@ -30,16 +30,17 @@ def get_national_data(csv_filename):
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Larceny-Theft', 'Motor Vehicle Theft']
     for year in range(1980, 2015):
-        year = 1980
         data_list = [str(year), 'United States-Total', 'N/A']
         driver.find_elements_by_xpath("//option[@value="+str(year)+"]")[0].click()
         driver.find_elements_by_xpath("//a[@title='Generate Results']")[0].click()
-        driver.manage().timeouts().implicitlyWait()
+        time.sleep(18)
         for thing in grab_from_site:
             alpha = driver.find_elements_by_xpath("//td[@title='" +\
         	    thing + " -- Total all ages']")[0].text
             data_list.append(alpha)
-        national_writer.writerow(data_list)
+        with open(csv_filename, mode='a') as data:
+            data_writer = csv.writer(data, delimiter=',', quoting = csv.QUOTE_ALL)
+            data_writer.writerow(data_list)
 
 
-get_national_data('asdf.csv')
+get_national_data('bjs_national.csv')

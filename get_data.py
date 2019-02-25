@@ -109,6 +109,7 @@ def get_all_states(csv_filename):
         get_state_data(state, csv_filename)
 
 def get_national_data(starting_years, target_dir):
+    #credit for custom profile: https://selenium-python.readthedocs.io/faq.html
     profile = webdriver.FirefoxProfile()
     profile.set_preference("browser.download.folderList",2)
     profile.set_preference("browser.download.manager.showWhenStarting", False)

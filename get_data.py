@@ -108,6 +108,14 @@ def get_all_states(csv_filename):
         get_state_data(state, csv_filename)
 
 def get_national_data(starting_years, target_dir):
+    '''
+    Gets national crime data from OJJDP
+
+    Inputs:
+        starting_years: (iterable) Either the list [1994,2001,2008] or
+                        a sublist. ie: including 2008 would get 2008-2014
+        target_dir: (string) Path to the directory for storing raw csv files
+    '''
     #credit for custom profile: https://selenium-python.readthedocs.io/faq.html
     profile = webdriver.FirefoxProfile()
     profile.set_preference("browser.download.folderList",2)

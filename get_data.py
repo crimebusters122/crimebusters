@@ -110,8 +110,7 @@ def get_all_states(csv_filename):
 def get_city_data(city_state, csv_filename):
     city_agencies = {'Colorado Springs, CO': 'Colorado Springs', \
                     'Washington, DC': 'Washington Metropolitan Police Dept', \
-                    'Jacksonville, FL': 'Jacksonville', 'Lexington, KY': \
-                    'Lexington-Fayette County Police Department', 'Baltimore, MD': \
+                    'Jacksonville, FL': 'Jacksonville', 'Baltimore, MD': \
                     'Baltimore City Police Dept', 'Las Vegas, NV': 'Las '+\
                     'Vegas Metropolitan Police Department', 'Charlotte, NC': \
                     'Charlotte-Mecklenburg Police Department', \
@@ -167,7 +166,9 @@ def get_city_data(city_state, csv_filename):
         x_button = driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']")[0]
         print(x_button)
         x_button.click()
+    print(agency)
     c_2 = "[contains(text(), '" + agency + "')]"
+    print(c_2)
     agency_obj = driver.find_elements_by_xpath("//select[@name="+\
                 "'CrimeCrossId']/*"+c_2)[0]
     agency_obj.click()
@@ -196,6 +197,8 @@ def get_city_data(city_state, csv_filename):
                  "'num vcrime1 murd']")
     rape_nums = driver.find_elements_by_xpath("//td[@headers="+\
                       "'num vcrime1 rape']")
+    rrape_nums = driver.find_elements_by_xpath("//td[@headers="+\
+                      "'num vcrime1 rrape']")
     rob_nums = driver.find_elements_by_xpath("//td[@headers="+\
                    "'num vcrime1 rob']")
     aslt_nums = driver.find_elements_by_xpath("//td[@headers="+\
@@ -214,6 +217,8 @@ def get_city_data(city_state, csv_filename):
                   "'rate vcrime2 murd2']")
     rape_rts = driver.find_elements_by_xpath("//td[@headers="+\
                        "'rate vcrime2 rape2']")
+    rrape_rts = driver.find_elements_by_xpath("//td[@headers="+\
+                      "'rate vcrime2 rrape2']")
     rob_rts = driver.find_elements_by_xpath("//td[@headers="+\
                     "'rate vcrime2 rob2']")
     aslt_rts = driver.find_elements_by_xpath("//td[@headers="+\
@@ -228,14 +233,24 @@ def get_city_data(city_state, csv_filename):
                      "'rate pcrime2 mvtheft2']")
     list_of_data = []
     for n in range(0, 14):
-        list_of_data.append([yrs[n].text] + [city_state] + \
-            [pops[n].text] + [v_nums[n].text] + [murd_nums[n].text] + \
-            [rape_nums[n].text] + [rob_nums[n].text] + [aslt_nums[n].text] + \
-            [p_nums[n].text] + [burg_nums[n].text] + [larc_nums[n].text] + \
-            [mv_nums[n].text] + [v_rts[n].text] + [murd_rts[n].text] + \
-            [rape_rts[n].text] + [rob_rts[n].text] + [aslt_rts[n].text] + \
-            [p_rts[n].text] + [burg_rts[n].text] + [larc_rts[n].text] + \
-            [mv_rts[n].text])
+        if rape_num[n].text != '':
+            list_of_data.append([yrs[n].text] + [city_state] + \
+                [pops[n].text] + [v_nums[n].text] + [murd_nums[n].text] + \
+                [rape_nums[n].text] + [rob_nums[n].text] + [aslt_nums[n].text]\
+                 + [p_nums[n].text] + [burg_nums[n].text] + \
+                [larc_nums[n].text] + [mv_nums[n].text] + [v_rts[n].text] + \
+                [murd_rts[n].text] + [rape_rts[n].text] + [rob_rts[n].text] + \
+                [aslt_rts[n].text] + [p_rts[n].text] + [burg_rts[n].text] + \
+                [larc_rts[n].text] + [mv_rts[n].text])
+        else:
+            list_of_data.append([yrs[n].text] + [city_state] + \
+                [pops[n].text] + [v_nums[n].text] + [murd_nums[n].text] + \
+                [rrape_nums[n].text] + [rob_nums[n].text] + \
+                [aslt_nums[n].text] + [p_nums[n].text] + [burg_nums[n].text] \
+                + [larc_nums[n].text] + [mv_nums[n].text] + [v_rts[n].text] + \
+                [murd_rts[n].text] + [rrape_rts[n].text] + [rob_rts[n].text] +\
+                 [aslt_rts[n].text] + [p_rts[n].text] + [burg_rts[n].text] + \
+                [larc_rts[n].text] + [mv_rts[n].text])
     with open(csv_filename, mode='a') as cities_data:
         cities_writer = csv.writer(cities_data, delimiter=',', quoting=csv.QUOTE_ALL)
         for i in range(0, 14):
@@ -255,7 +270,7 @@ def get_all_cities(csv_filename):
              'Henderson, NV', 'Buffalo, NY', 'Cincinnati, OH', 'Cleveland, '+\
               'OH', 'Toledo, OH', 'Tulsa, OK', 'Pittsburgh, PA', 'Arlington' +\
              ', TX', 'Corpus Christi, TX', 'Laredo, TX', 'Plano, TX', \
-             'Virginia Beach, VA', 'Tuscon, AZ', 'Fresno, CA', 'San ' +\
+             'Virginia Beach, VA', 'Tucson, AZ', 'Fresno, CA', 'San ' +\
              'Francisco, CA', 'Denver, CO', 'Washington, DC', 'Jacksonville' +\
              ', FL', 'Honolulu, HI', 'Indianapolis, IN', 'Louisville, KY', \
              'Boston, MA', 'Baltimore, MD', 'Detroit, MI', 'Charlotte, NC', \

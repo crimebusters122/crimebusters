@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
 
-def get_national_data(starting_years, target_dir):
+def get_raw_national_data(starting_years, target_dir):
     '''
     Gets national crime data from OJJDP
 
@@ -38,6 +38,7 @@ def get_national_data(starting_years, target_dir):
             driver.find_element_by_xpath("//a [@title='Download CSV file']")
         data_object.click()
     driver.close()
+    return
 
 def clean_csv(starting_years, target_dir, new_csv):
     '''
@@ -59,3 +60,24 @@ def clean_csv(starting_years, target_dir, new_csv):
         df.drop('Unnamed: 8', axis=1, inplace=True)
         df = df.transpose()
         df_list.append(df)
+        big_df = pd.concat(df_list)
+        big_df.rename({'Prostitution/<br>commercialized vice':\
+            'Prostitution/commercialized vice'},axis=1,inplace=True)
+        big_df.to_csv(new_csv, index_label=False, \
+            header=['Year']+list(big_df.columns)[1:])
+    return
+
+def get_clean_csv(starting_years, target_dir, new_csv):
+    '''
+    Get a cleaned csv of national data
+
+    Inputs:
+        starting_years: (iterable) Either the list [1994,2001,2008] or
+                        a sublist. Years should be given in ascending order
+                        Note: including 2008 would get 2008-2014
+        target_dir: (string) Path to the directory for storing raw csv files
+        new_csv: (string) Path to file where cleaned csv should be written
+    '''
+    get_raw_national_data(starting_years, target_dir)
+    clean_csv(starting_years, target_dir, new_csv)
+    return

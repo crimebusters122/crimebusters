@@ -10,7 +10,8 @@ def get_national_data(starting_years, target_dir):
 
     Inputs:
         starting_years: (iterable) Either the list [1994,2001,2008] or
-                        a sublist. ie: including 2008 would get 2008-2014
+                        a sublist. Years should be given in ascending order
+                        Note: including 2008 would get 2008-2014
         target_dir: (string) Path to the directory for storing raw csv files
     '''
     #credit for custom profile: https://selenium-python.readthedocs.io/faq.html
@@ -38,15 +39,17 @@ def get_national_data(starting_years, target_dir):
         data_object.click()
     driver.close()
 
-def clean_csv(starting_years, target_dir):
+def clean_csv(starting_years, target_dir, new_csv):
     '''
     Combine csv outputs from above code, turn them so each row is a year
 
     Inputs:
         starting_years: (iterable) As above
         target_dir: (string) As above
+        new_csv: (string) Path to new csv to be written to
     '''
     NUM_ROWS_TO_USE = 34 #number of rows in csv containing data
+    df_list = []
     for i in range(len(starting_years)):
         if i == 0:
             csv_name = target_dir + '/ucr_export.csv'
@@ -54,3 +57,5 @@ def clean_csv(starting_years, target_dir):
             csv_name = target_dir + '/ucr_export(' + str(i) + ').csv'
         df = pd.read_csv(csv_name,header=1,index_col=0,nrows=NUM_ROWS_TO_USE)
         df.drop('Unnamed: 8', axis=1, inplace=True)
+        df = df.transpose()
+        df_list.append(df)

@@ -19,26 +19,27 @@ def get_national_data(csv_filename):
 
     driver = webdriver.Firefox()
     driver.get('https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#')
-    driver.find_elements_by_xpath("//*[@title='National Estimates']")[0].click()
+    driver.find_elements_by_xpath("//div[@title='National Estimates']")[0].click()
     #alpha = driver.find_elements_by_xpath("//script[@language='javascript']")[2].click()
     driver.find_elements_by_xpath("//a[@id='atab1']")[0].click()
+    time.sleep(5)
     driver.find_elements_by_xpath("//option[@value=1]")[0].click()
 
     
     grab_from_site = ['Violent Crime Index', 'Murder and Non-Negligent' +\
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Larceny-Theft', 'Motor Vehicle Theft']
-    #for year in range(1980, 2015):
-    year = 1980
-    data_list = [str(year), 'United States-Total', 'N/A']
-    driver.find_elements_by_xpath("//option[@value="+str(year)+"]")[0].click()
-    driver.find_elements_by_xpath("//a[@title='Generate Results']")[0].click()
-    time.sleep(15)
-    for thing in grab_from_site:
-        alpha = driver.find_elements_by_xpath("//td[@title='" +\
-        	thing + " -- Total all ages']")[0].text
-        print(thing)
-        print(alpha)
+    for year in range(1980, 2015):
+        year = 1980
+        data_list = [str(year), 'United States-Total', 'N/A']
+        driver.find_elements_by_xpath("//option[@value="+str(year)+"]")[0].click()
+        driver.find_elements_by_xpath("//a[@title='Generate Results']")[0].click()
+        driver.manage().timeouts().implicitlyWait()
+        for thing in grab_from_site:
+            alpha = driver.find_elements_by_xpath("//td[@title='" +\
+        	    thing + " -- Total all ages']")[0].text
+            data_list.append(alpha)
+        national_writer.writerow(data_list)
 
 
 get_national_data('asdf.csv')

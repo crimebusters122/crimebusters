@@ -3,6 +3,7 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import csv
+import time
 
 def get_national_data(csv_filename):
     '''
@@ -32,8 +33,12 @@ def get_national_data(csv_filename):
     data_list = [str(year), 'United States-Total', 'N/A']
     driver.find_elements_by_xpath("//option[@value="+str(year)+"]")[0].click()
     driver.find_elements_by_xpath("//a[@title='Generate Results']")[0].click()
-    alpha = driver.find_elements_by_xpath("//th")
-    print(alpha[0].text)
+    time.sleep(15)
+    for thing in grab_from_site:
+        alpha = driver.find_elements_by_xpath("//td[@title='" +\
+        	thing + " -- Total all ages']")[0].text
+        print(thing)
+        print(alpha)
 
 
 get_national_data('asdf.csv')

@@ -116,7 +116,7 @@ def get_city_data(city_state, csv_filename):
                     'Charlotte-Mecklenburg Police Department', \
                     'Cleveland, OH': 'Cleveland', 'Pittsburgh, PA': \
                     'Pittsburgh', 'Nashville, TN': 'Nashville-Davidson Metro'+\
-                    ' Police Dept', 'Fort Worth, TX': 'City of Fort Worth '+\
+                    ' Police Dept', 'Fort Worth, TX': 'City Of Fort Worth '+\
                     'Police Dept', 'Laredo, TX': 'Laredo'}
     state_keys = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': \
                  'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': \
@@ -139,7 +139,6 @@ def get_city_data(city_state, csv_filename):
     city = sep[0]
     state_key = sep[1].strip()
     state = state_keys[state_key]
-    print(city_state)
     if city_state not in city_agencies.keys():
         agency = city + ' Police Dept'
     else:
@@ -164,11 +163,8 @@ def get_city_data(city_state, csv_filename):
     next_page.click()
     if driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']") != []:
         x_button = driver.find_elements_by_xpath("//*[@class='acsCloseButton acsAbandonButton ']")[0]
-        print(x_button)
         x_button.click()
-    print(agency)
     c_2 = "[contains(text(), '" + agency + "')]"
-    print(c_2)
     agency_obj = driver.find_elements_by_xpath("//select[@name="+\
                 "'CrimeCrossId']/*"+c_2)[0]
     agency_obj.click()
@@ -233,7 +229,7 @@ def get_city_data(city_state, csv_filename):
                      "'rate pcrime2 mvtheft2']")
     list_of_data = []
     for n in range(0, 14):
-        if rape_num[n].text != '':
+        if rape_nums[n].text != '':
             list_of_data.append([yrs[n].text] + [city_state] + \
                 [pops[n].text] + [v_nums[n].text] + [murd_nums[n].text] + \
                 [rape_nums[n].text] + [rob_nums[n].text] + [aslt_nums[n].text]\
@@ -263,7 +259,7 @@ def get_all_cities(csv_filename):
              'Beach, CA', 'Oakland, CA', 'Riverside, CA', 'Sacramento, CA', \
              'Santa Ana, CA', 'Stockton, CA', 'Aurora, CO', 'Colorado ' +\
              'Springs, CO', 'Miami, FL', 'Orlando, FL', 'Tampa, FL', \
-             'Atlanta, GA', 'Fort Wayne, IN', 'Wichita, KS', 'Louisville, KY',\
+             'Atlanta, GA', 'Fort Wayne, IN', 'Wichita, KS', \
               'New Orleans, LA', 'Minneapolis, MN', 'St. Paul, MN', \
              'St. Louis, MO', 'Greensboro, NC', 'Raleigh, NC', \
              'Lincoln, NE', 'Omaha, NE', 'Jersey City, NJ', 'Newark, NJ', \
@@ -272,7 +268,7 @@ def get_all_cities(csv_filename):
              ', TX', 'Corpus Christi, TX', 'Laredo, TX', 'Plano, TX', \
              'Virginia Beach, VA', 'Tucson, AZ', 'Fresno, CA', 'San ' +\
              'Francisco, CA', 'Denver, CO', 'Washington, DC', 'Jacksonville' +\
-             ', FL', 'Honolulu, HI', 'Indianapolis, IN', 'Louisville, KY', \
+             ', FL', 'Honolulu, HI', 'Indianapolis, IN', \
              'Boston, MA', 'Baltimore, MD', 'Detroit, MI', 'Charlotte, NC', \
              'Albuquerque, NM', 'Columbus, OH', 'Oklahoma City, OK', \
              'Portland, OR', 'Memphis, TN', 'Nashville, TN', 'Austin, TX', \
@@ -294,4 +290,3 @@ def get_all_cities(csv_filename):
         csv_writer.writerow(head)
     for city in cities:
         get_city_data(city, csv_filename)
->>>>>>> 7b9e0d195eba18a6d2b1645b908b5ba66930ff22

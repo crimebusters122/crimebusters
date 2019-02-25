@@ -2,6 +2,7 @@
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import pandas as pd
 
 def get_national_data(starting_years, target_dir):
     '''
@@ -36,3 +37,20 @@ def get_national_data(starting_years, target_dir):
             driver.find_element_by_xpath("//a [@title='Download CSV file']")
         data_object.click()
     driver.close()
+
+def clean_csv(starting_years, target_dir):
+    '''
+    Combine csv outputs from above code, turn them so each row is a year
+
+    Inputs:
+        starting_years: (iterable) As above
+        target_dir: (string) As above
+    '''
+    NUM_ROWS_TO_USE = 34 #number of rows in csv containing data
+    for i in range(len(starting_years)):
+        if i == 0:
+            csv_name = target_dir + '/ucr_export.csv'
+        else:
+            csv_name = target_dir + '/ucr_export(' + str(i) + ').csv'
+        df = pd.read_csv(csv_name,header=1,index_col=0,nrows=NUM_ROWS_TO_USE)
+        df.drop('Unnamed: 8', axis=1, inplace=True)

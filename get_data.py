@@ -107,3 +107,28 @@ def get_all_states(csv_filename):
         csv_writer.writerow(head)
     for state in states:
         get_state_data(state, csv_filename)
+
+def get_national_data(starting_years, target_dir):
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("browser.download.folderList",2)
+    profile.set_preference("browser.download.manager.showWhenStarting", False)
+    profile.set_preference("browser.download.dir", target_dir)
+    profile.set_preference("browser.helperApps.neverAsk.saveToDisk","text/csv")
+    driver = webdriver.Firefox(firefox_profile=profile)
+    driver.get('https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp')
+    for start in starting_years:
+        state_object = driver.find_element_by_xpath("//option [@value=0]")
+        state_object.click()
+        year_object = driver.find_element_by_xpath("//input [@name='rdoYear'] \
+            [@VALUE="+str(start)+"]")
+        year_object.click()
+        age_object = driver.find_element_by_xpath("//input [\
+            @name='rdoData'] [@VALUE='1c']")
+        age_object.click()
+        update_object = driver.find_element_by_xpath("//button \
+            [@name='submit'] [@value='Update Table']")
+        update_object.click()
+        data_object = \
+            driver.find_element_by_xpath("//a [@title='Download CSV file']")
+        data_object.click()
+    driver.close()

@@ -8,7 +8,7 @@ import time
 def get_national_data(csv_filename):
     '''
     '''
-    head = ['Year', 'City', 'Department', 'Violent Crime'+\
+    head = ['Year', 'State', 'Department', 'Violent Crime'+\
             ' Total', 'Murder and Nonnegligent Manslaughter', 'Rape', \
             'Robbery', 'Aggravated Assault', 'Property Crime Total', \
             'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
@@ -20,8 +20,14 @@ def get_national_data(csv_filename):
     driver = webdriver.Firefox()
     driver.get('https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#')
     driver.find_elements_by_xpath("//div[@title='Agency-Level Counts']")[0].click()
+    time.sleep(2)
     driver.find_elements_by_xpath("//a[@id='atab1']")[0].click()
     time.sleep(3)
+    asdf = driver.find_elements_by_xpath("//option[@value=1]")
+    for a in asdf:
+        if a.text == "Offense By Age":
+            a.click()
+            break
 
     department_code_dict = {"Alabama": ['"AL00201"'], "Alaska": ['"AK00101"'], 
                             "Arizona": ['"AZ00705"', '"AZ00717"', '"AZ01003"', 
@@ -71,23 +77,27 @@ def get_national_data(csv_filename):
             for department_code in department_code_dict[state]:
                 print(department_code)
                 button = driver.find_elements_by_xpath(
-                    "//option[@value="+department_code+"]")[0]
-                button.click()
-                department = button.text
+                    "//option[@value="+department_code+"]")
+                if len(button) != 0:
+                    button[0].click()
+                department = button[0].text
                 print(department)
-    '''
-    for year in range(1980, 2015):
-        data_list = [str(year), 'United States-Total', 'N/A']
-        driver.find_elements_by_xpath("//option[@value="+str(year)+"]")[0].click()
-        driver.find_elements_by_xpath("//a[@title='Generate Results']")[0].click()
-        time.sleep(18)
-        for thing in grab_from_site:
-            alpha = driver.find_elements_by_xpath("//td[@title='" +\
-        	    thing + " -- Total all ages']")[0].text
-            data_list.append(alpha)
-        with open(csv_filename, mode='a') as data:
-            data_writer = csv.writer(data, delimiter=',', quoting = csv.QUOTE_ALL)
-            data_writer.writerow(data_list)
+                for year in range(2000, 2015):
+                    data_list = [str(year), state, department]
+                    driver.find_elements_by_xpath(
+                        "//option[@value="+str(year)+"]")[0].click()    
+                    driver.find_elements_by_xpath(
+                        "//a[@title='Generate Results']")[0].click()
+                    time.sleep(18)
+                    for thing in grab_from_site:
+                        alpha = driver.find_elements_by_xpath("//td[@title='" +\
+        	                thing + " -- Total all ages']")
+                        if len(alpha) != 0:
+                            data_list.append(alpha[0].text)
+                    with open(csv_filename, mode='a') as data:
+                        data_writer = csv.writer(data, 
+                            delimiter=',', quoting = csv.QUOTE_ALL)
+                        data_writer.writerow(data_list)
 
-    '''
+
 get_national_data('bjs_city.csv')

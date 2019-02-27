@@ -5,13 +5,13 @@ from selenium.webdriver.common.keys import Keys
 import csv
 import time
 
-def get_national_data(csv_filename):
+def get_city_data(csv_filename):
     '''
     '''
     head = ['Year', 'City', 'Violent Crime'+\
             ' Total', 'Murder and Nonnegligent Manslaughter', 'Rape', \
             'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-            'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
+            'Larceny-Theft', 'Motor Vehicle Theft']
 
     with open(csv_filename, mode='w') as csv_file:
         csv_writer = csv.writer(csv_file, delimiter=',')

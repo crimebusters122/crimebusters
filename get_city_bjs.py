@@ -97,7 +97,7 @@ def get_city_data(csv_filename):
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Larceny-Theft', 'Motor Vehicle Theft']
 
-    for option in range (5, 50):
+    for option in range (0, 50):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 

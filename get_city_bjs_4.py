@@ -50,7 +50,7 @@ def get_city_data(csv_filename):
                             "Ohio": ['"OHCLP00"', '"OHCOP00"'], 
                             "Oklahoma": ['"OK07205"', '"OK05506"'],
                             "Pennsylvania": ['"PAPPD00"', '"PAPEP00"'], 
-                            "Texas": ['"TX22001"', '"TXDPD00"', '"TXHPD00"',
+                            "Texas": ['"TXHPD00"',
                             '"TX17802"', '"TX24001"', '"TX04306"', '"TXSPD00"',
                             '"TX22701"', '"TX22012"', '"TX07102"'], "Virginia": 
                             ['"VA12800"'], "District of Columbia": ['"DCMPD00"'],
@@ -95,7 +95,7 @@ def get_city_data(csv_filename):
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
 
-    for option in range (45, 52):
+    for option in range (44, 45):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 
@@ -141,4 +141,4 @@ def get_city_data(csv_filename):
                                     data_writer.writerow(data_list)
     driver.close()
 
-get_city_data("bjs_city_data_5.csv")
+get_city_data("bjs_city_data_texas.csv")

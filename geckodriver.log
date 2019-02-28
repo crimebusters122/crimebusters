@@ -3866,3 +3866,16 @@ console.error: BroadcastService:
 1551387498616	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
 1551387517478	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
 1551387517530	Marionette	INFO	Stopped listening on port 42025
+1551394093515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wHiA5m7dPVXk"
+1551394094106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551394094106	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551394095077	Marionette	INFO	Listening on port 36905
+1551394095131	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1551394226017	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nyG3VQ6sIxFg"
+1551394226278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1551394226278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1551394227159	Marionette	INFO	Listening on port 39277
+1551394227226	Marionette	WARN	TLS certificate errors will be ignored for this session

@@ -101,7 +101,10 @@ def get_city_data(csv_filename):
                     "Portland, OR": [2013], "Chandler, AZ": [2012], "Mesa, AZ": [2012],
                     "Phoenix, AZ": [2006], "Oakland, CA": [2002, 2004, 2013], "Riverside, CA":
                     [2004, 2006, 2009], "Fresno, CA": [2014], "San Francisco, CA": [2007],
-                    "San Jose, CA": [2004]}
+                    "San Jose, CA": [2004], "Arlington, TX": [2003, 2008], "Seattle, WA":
+                    [2001, 2003, 2011], "Milwaukee, WI": [2004], "Charlotte-Mecklenburg, NC":
+                    [2004, 2006], "Cleveland, OH": [2001, 2002, 2003], "Philadelphia, PA": [2011],
+                    "Memphis, TN": [2012]}
 
     grab_from_site = ['Violent Crime Index', 'Murder and Non-Negligent' +\
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\

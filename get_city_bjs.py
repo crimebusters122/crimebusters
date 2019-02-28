@@ -37,19 +37,17 @@ def get_city_data(csv_filename):
                             '"CA03019"', '"CA03905"', '"CA01005"', '"CA03801"', 
                             '"CA01942"', '"CA03711"', '"CA04313"'], 
                             "Colorado": ['"CO00101"', '"CODPD00"',
-                            '"CO02101"'], "Florida": ['"FL01306"', '"FL04804"',
-                            '"FL02902"', '"FL01602"'], "Georgia": ['"GAAPD00"'], 
+                            '"CO02101"'], "Georgia": ['"GAAPD00"'], 
                             "Indiana": ['"IN00201"', '"INIPD00"'], 
                             "Kansas": ['"KS08703"'], "Kentucky": ['"KY05602"'], 
-                            "Louisiana": ['"LANPD00"'], "Minnesota": 
+                            "Minnesota": 
                             ['"MN02711"', '"MN06209"'], "Missouri": ['"MOSPD00"'],
                             "North Carolina": ['"NC04102"', '"NC09201"', '"NC06001"'], 
                             "Nebraska": ['"NB05501"', '"NB02802"'], "New Jersey": 
                             ['"NJ00906"', '"NJNPD00"'], "Nevada": ['"NV00203"', 
                             '"NV00201"'],
                             "New York": ['"NY01401"', '"NY03030"'], 
-                            "Ohio": ['"OHCIP00"', 
-                            '"OHCLP00"', '"OH04807"', '"OHCOP00"'], 
+                            "Ohio": ['"OHCLP00"', '"OH04807"', '"OHCOP00"'], 
                             "Oklahoma": ['"OK07205"', '"OK05506"'],
                             "Pennsylvania": ['"PAPPD00"', '"PAPEP00"'], 
                             "Texas": ['"TX22001"', '"TXDPD00"', '"TXHPD00"',

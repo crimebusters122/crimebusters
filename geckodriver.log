@@ -3879,3 +3879,13 @@ Exiting due to channel error.
 1551394226278	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
 1551394227159	Marionette	INFO	Listening on port 39277
 1551394227226	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1551396328765	Marionette	INFO	Stopped listening on port 39277
+[Parent 2168, Gecko_IOThread] WARNING: pipe error (78): Connection reset by peer: file /build/firefox-5TPFUC/firefox-65.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349

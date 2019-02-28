@@ -32,7 +32,7 @@ def get_city_data(csv_filename):
     department_code_dict = {"Alabama": ['"AL00201"'], "Alaska": ['"AK00101"'], 
                             "Arizona": ['"AZ00705"', '"AZ00717"', '"AZ01003"', 
                             '"AZ00723"'], 
-                            "California": ['"CA03001"', '"CA01502"', '"CA03702"', 
+                            "California": ['"CA03702"', 
                             '"CA01941"', '"CA00109"', '"CA03313"', '"CA03404"', 
                             '"CA03019"', '"CA03905"', '"CA01005"', '"CA03801"', 
                             '"CA01942"', '"CA03711"', '"CA04313"'], 
@@ -61,7 +61,7 @@ def get_city_data(csv_filename):
                             "New Mexico": ['"NM00101"'], "Oregon": ['"OR02602"'],
                             "Tennessee": ['"TNMPD00"', '"TN01901"'], 
                             "Washington": ['"WASPD00"'], "Wisconsin": ['"WIMPD00"'],
-                            "Illinois": ['"ILCPD00"'],}
+                            "Illinois": ['"ILCPD00"']}
     state_keys = {'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', \
                  'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO', \
                  'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', \
@@ -79,18 +79,18 @@ def get_city_data(csv_filename):
                  'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA', \
                  'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI',\
                   'Wyoming': 'WY', 'District of Columbia': 'DC'}
-    weird_names = {'TX22012': 'Fort Worth, TX', 'CA03702': \
-                    'Chula Vista, CA', 'CA01941': 'Long Beach, CA', \
-                    'CA03019': 'Santa Ana, CA', 'CO02101': \
-                    'Colorado Springs, CO', 'IN00201': 'Fort Wayne, IN', \
-                    'LANPD00': 'New Orleans, LA', 'MN06209': 'St. Paul, MN', \
-                    'MOSPD00': 'St. Louis, MO', 'NJ00906': 'Jersey City, NJ', \
-                    'TX17802': 'Corpus Christi, TX', 'VA12800': \
-                    'Virginia Beach, VA', 'CA03801': 'San Francisco, CA', \
-                    'OK05506': 'Oklahoma City, OK', 'TX07102': 'El Paso, TX', \
-                    'CA01942': 'Los Angeles, CA', 'CA03711': 'San Diego, CA', \
-                    'CA04313': 'San Jose, CA', 'NV00201': 'Las Vegas, NV', \
-                    'NY03030': 'New York City, NY', 'TXSPD00': \
+    weird_names = {'"TX22012"': 'Fort Worth, TX', '"CA03702"': \
+                    'Chula Vista, CA', '"CA01941"': 'Long Beach, CA', \
+                    '"CA03019"': 'Santa Ana, CA', '"CO02101"': \
+                    'Colorado Springs, CO', '"IN00201"': 'Fort Wayne, IN', \
+                    '"LANPD00"': 'New Orleans, LA', '"MN06209"': 'St. Paul, MN', \
+                    '"MOSPD00"': 'St. Louis, MO', '"NJ00906"': 'Jersey City, NJ', \
+                    '"TX17802"': 'Corpus Christi, TX', '"VA12800"': \
+                    'Virginia Beach, VA', '"CA03801"': 'San Francisco, CA', \
+                    '"OK05506"': 'Oklahoma City, OK', '"TX07102"': 'El Paso, TX', \
+                    '"CA01942"': 'Los Angeles, CA', '"CA03711"': 'San Diego, CA', \
+                    '"CA04313"': 'San Jose, CA', '"NV00201"': 'Las Vegas, NV', \
+                    '"NY03030"': 'New York City, NY', '"TXSPD00"': \
                     'San Antonio, TX'}
 
     grab_from_site = ['Violent Crime Index', 'Murder and Non-Negligent' +\
@@ -102,15 +102,19 @@ def get_city_data(csv_filename):
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 
         if state in department_code_dict:
+            print(state)
             time.sleep(5)
             for department_code in department_code_dict[state]:
+                print(department_code)
                 button = driver.find_elements_by_xpath(
                     "//option[@value="+department_code+"]")
+                print(button[0].text)
                 if len(button) != 0:
                     button[0].click()
-                if department_code not in weird_names:
+                if department_code not in weird_names.keys():
                     city = button[0].text.split()[0] + ', ' + state_keys[state]
                 else:
+                    print(weird_names[department_code])
                     city = weird_names[department_code]
                 department = button[0].text
                 for year in range(2001, 2015):

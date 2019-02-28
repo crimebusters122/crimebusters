@@ -11,7 +11,7 @@ def get_city_data(csv_filename):
     head = ['Year', 'City', 'Violent Crime'+\
             ' Total', 'Murder and Nonnegligent Manslaughter', 'Rape', \
             'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-            'Larceny-Theft', 'Motor Vehicle Theft']
+            'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
 
     with open(csv_filename, mode='w') as csv_file:
         csv_writer = csv.writer(csv_file, delimiter=',')
@@ -95,7 +95,7 @@ def get_city_data(csv_filename):
 
     grab_from_site = ['Violent Crime Index', 'Murder and Non-Negligent' +\
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
-    ' Crime Index', 'Larceny-Theft', 'Motor Vehicle Theft']
+    ' Crime Index', 'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
 
     for option in range (0, 50):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()

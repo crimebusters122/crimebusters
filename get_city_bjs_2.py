@@ -46,7 +46,7 @@ def get_city_data(csv_filename):
                             "Nebraska": ['"NB05501"', '"NB02802"'], "New Jersey": 
                             ['"NJ00906"', '"NJNPD00"'], "Nevada": ['"NV00203"', 
                             '"NV00201"'],
-                            "New York": ['"NY01401"', '"NY03030"'], 
+                            "New York": ['"NY01401"'], 
                             "Ohio": ['"OHCLP00"', '"OHCOP00"'], 
                             "Oklahoma": ['"OK07205"', '"OK05506"'],
                             "Pennsylvania": ['"PAPPD00"', '"PAPEP00"'], 

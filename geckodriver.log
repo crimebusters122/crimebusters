@@ -1552,3 +1552,1016 @@ console.error: BroadcastService:
 1550646623245	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ucrdatatool.gov/Search/Crime/State/RunCrimeStatebyState.cfm
 1550646625352	Marionette	INFO	Stopped listening on port 44952
 [Parent 5751, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551074621804	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.e5XvzE1TddEW"
+1551074628172	Marionette	INFO	Listening on port 34688
+1551074628243	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074628669	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074628676	Marionette	DEBUG	[2147483649] Frame script registered
+1551074628722	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074629481	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074644808	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074647176	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074647699	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074730648	Marionette	INFO	Stopped listening on port 34688
+1551074736380	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.u7OdKK3qW4tE"
+1551074741101	Marionette	INFO	Listening on port 46082
+1551074741168	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074741727	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074741728	Marionette	DEBUG	[2147483649] Frame script registered
+1551074742007	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074742638	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074751006	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074754741	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074755244	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074768812	Marionette	INFO	Stopped listening on port 46082
+1551074772844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.pKN4jMp5oeAh"
+1551074780597	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dNKTzo9lsjDz"
+1551074785828	Marionette	INFO	Listening on port 43135
+1551074785901	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074786261	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074786271	Marionette	DEBUG	[2147483649] Frame script registered
+1551074786312	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074787251	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074792150	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074793160	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074793861	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074823158	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.skF3d2VHAJSl"
+1551074826304	Marionette	INFO	Stopped listening on port 43135
+1551074829886	Marionette	INFO	Listening on port 45945
+1551074829955	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074830293	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074830348	Marionette	DEBUG	[2147483649] Frame script registered
+1551074830477	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074831447	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074835507	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074836494	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074837248	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074838043	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074838387	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074838766	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074839014	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074894848	Marionette	INFO	Stopped listening on port 45945
+1551074899788	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mzVfx1vhMjFn"
+1551074905015	Marionette	INFO	Listening on port 39301
+1551074905079	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074905295	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074905300	Marionette	DEBUG	[2147483649] Frame script registered
+1551074905439	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074906688	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074916389	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074919197	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074919672	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074927049	Marionette	INFO	Stopped listening on port 39301
+1551074929812	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.p2apaOKx7GSM"
+1551074935072	Marionette	INFO	Listening on port 43956
+1551074935144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074935564	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074935580	Marionette	DEBUG	[2147483649] Frame script registered
+1551074935629	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074936715	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074940513	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074942643	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074943385	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074943744	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074957166	Marionette	INFO	Stopped listening on port 43956
+1551074959567	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IsKl0UKlqXx0"
+1551074964675	Marionette	INFO	Listening on port 35102
+1551074964803	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074965120	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074965126	Marionette	DEBUG	[2147483649] Frame script registered
+1551074965202	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074966413	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074972261	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074975998	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551074976808	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551074982655	Marionette	INFO	Stopped listening on port 35102
+1551074985435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tRdDN8R6ov3S"
+1551074991638	Marionette	INFO	Listening on port 45109
+1551074991692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551074992078	Marionette	DEBUG	[2147483649] Frame script loaded
+1551074992086	Marionette	DEBUG	[2147483649] Frame script registered
+1551074992444	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551074994022	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551074999694	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075001307	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075001892	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075002559	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075048719	Marionette	INFO	Stopped listening on port 45109
+1551075052541	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.b6e4zJ3Mg9mY"
+1551075057558	Marionette	INFO	Listening on port 36440
+1551075057620	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551075057991	Marionette	DEBUG	[2147483649] Frame script loaded
+1551075057993	Marionette	DEBUG	[2147483649] Frame script registered
+1551075058085	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551075059048	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551075064723	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075066766	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075067394	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075067886	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075110106	Marionette	INFO	Stopped listening on port 36440
+1551075112319	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cjiP8W81sMBR"
+1551075116972	Marionette	INFO	Listening on port 33704
+1551075117046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551075117565	Marionette	DEBUG	[2147483649] Frame script loaded
+1551075117572	Marionette	DEBUG	[2147483649] Frame script registered
+1551075117625	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551075118598	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551075122582	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075124336	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551075125076	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075125518	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075130843	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075131120	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075131393	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551075249701	Marionette	INFO	Stopped listening on port 33704
+1551113229035	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Vcb1vI2FuoTo"
+1551113234438	Marionette	INFO	Listening on port 36749
+1551113234594	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551113234845	Marionette	DEBUG	[2147483649] Frame script loaded
+1551113234847	Marionette	DEBUG	[2147483649] Frame script registered
+1551113234892	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551113235244	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551113238005	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113243011	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113244361	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113245014	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8342, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8296, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551113264179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vuoPQGWuFVbH"
+1551113269232	Marionette	INFO	Listening on port 36257
+1551113269304	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551113269747	Marionette	DEBUG	[2147483649] Frame script loaded
+1551113269754	Marionette	DEBUG	[2147483649] Frame script registered
+1551113269807	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551113270691	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551113273617	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113274698	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113275435	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113276282	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113281596	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113281857	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113282123	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113317629	Marionette	INFO	Stopped listening on port 36257
+1551113322529	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qThk0UUedl43"
+1551113327425	Marionette	INFO	Listening on port 45828
+1551113327550	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551113328006	Marionette	DEBUG	[2147483649] Frame script loaded
+1551113328041	Marionette	DEBUG	[2147483649] Frame script registered
+1551113328200	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551113329129	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551113332030	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113333108	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113334110	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113334885	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113340279	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113340577	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113340832	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113581316	Marionette	INFO	Stopped listening on port 45828
+1551113583542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RrfWBbZi4Ser"
+1551113588546	Marionette	INFO	Listening on port 34235
+1551113588623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551113588956	Marionette	DEBUG	[2147483649] Frame script loaded
+1551113588965	Marionette	DEBUG	[2147483649] Frame script registered
+1551113589092	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551113589592	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551113592189	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113594613	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551113595492	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113595943	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113601251	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113601496	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113601745	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113622676	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113623127	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113643655	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113643913	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113664478	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113664742	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113685337	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113685592	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113706064	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113706302	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113726830	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113727421	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113748173	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113748431	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113769060	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113769289	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113790142	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113790378	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113810918	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113811154	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113831788	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113832031	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113852920	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113853163	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113873789	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113874057	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113899849	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113900289	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113921244	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113921480	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113941939	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113942267	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113963346	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113963574	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1551113984058	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551113984327	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114005148	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114005405	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114025917	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114026211	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114047281	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114047506	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114068070	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114068331	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114089363	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114089595	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114110464	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114110759	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114131449	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114131852	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114152902	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114153135	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114173603	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114173898	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114194667	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114194942	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114221918	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114222344	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114243038	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114243312	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114263803	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114264043	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114284596	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114284843	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114305365	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114305648	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114326167	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114326452	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114441343	Marionette	INFO	Stopped listening on port 34235
+1551114454198	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dTKPkGtvEsvA"
+1551114459728	Marionette	INFO	Listening on port 37772
+1551114459796	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551114460102	Marionette	DEBUG	[2147483649] Frame script loaded
+1551114460120	Marionette	DEBUG	[2147483649] Frame script registered
+1551114460186	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551114460824	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551114463606	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551114465577	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551114466360	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114466736	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114472096	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114472563	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114472809	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114491942	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114492230	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114510980	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114511213	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114529870	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114530113	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114548990	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114549240	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114568099	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114568344	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114586892	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114587208	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114606054	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114606286	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114624963	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114625192	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114644060	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114644285	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114662901	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114663126	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114681698	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114681934	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114700705	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114700943	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114719659	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114719950	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114738506	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114739301	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114758060	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114758409	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114777201	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114777486	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114796080	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114796362	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114815072	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114815794	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114834503	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114834815	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1551114853553	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114853782	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114872487	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114872714	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114891159	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114891941	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114910692	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114910929	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114929605	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114930058	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114948918	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114949227	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114967727	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114967961	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114986617	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551114986867	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115005595	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115005831	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115024329	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115024652	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115043182	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115043778	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115062467	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115062865	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115081516	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115081848	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115100513	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115100821	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115119612	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115119847	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551115283627	Marionette	INFO	Stopped listening on port 37772
+1551146855899	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.32MCPqztp0Zi"
+1551146860993	Marionette	INFO	Listening on port 43158
+1551146861130	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551146861375	Marionette	DEBUG	[2147483649] Frame script loaded
+1551146861388	Marionette	DEBUG	[2147483649] Frame script registered
+1551146861454	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551146861912	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551146863999	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551146864761	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551146865707	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551146866274	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551146871561	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551146880839	Marionette	INFO	Stopped listening on port 43158
+1551147589862	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PEExzhVkuGRn"
+1551147593999	Marionette	INFO	Listening on port 36805
+1551147594044	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551147594350	Marionette	DEBUG	[2147483649] Frame script loaded
+1551147594352	Marionette	DEBUG	[2147483649] Frame script registered
+1551147594402	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551147594908	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551147597309	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147598680	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147599194	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147599570	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147604837	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147605106	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147605339	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147605604	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147605976	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147606277	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147606509	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147606777	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147607036	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147607294	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147607544	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147607867	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147608119	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147608357	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147608608	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147608856	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147609265	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147609489	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147609712	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147609985	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147610252	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147610510	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147610742	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147611015	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147611312	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147611672	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147611987	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147612306	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10334, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10276, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551147726021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wufb0oA9hEQd"
+1551147730243	Marionette	INFO	Listening on port 33549
+1551147730405	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551147730645	Marionette	DEBUG	[2147483649] Frame script loaded
+1551147730649	Marionette	DEBUG	[2147483649] Frame script registered
+1551147730727	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551147731070	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551147733272	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147734622	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147735133	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147735477	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147740734	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147765344	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mriD5zZkkGhb"
+1551147770195	Marionette	INFO	Stopped listening on port 33549
+1551147771595	Marionette	INFO	Listening on port 35727
+1551147771643	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551147771921	Marionette	DEBUG	[2147483649] Frame script loaded
+1551147771932	Marionette	DEBUG	[2147483649] Frame script registered
+1551147772002	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551147772424	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551147774804	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147776448	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551147777055	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147777409	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147782695	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147783029	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147783282	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147783700	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147784175	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147784489	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147784729	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147785102	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147785417	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147785950	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147786273	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147786566	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147786941	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147787374	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147787694	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147788027	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147788594	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147788997	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147789249	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147789497	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147789939	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147790486	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147791018	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147791340	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147791582	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147792024	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147792373	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147792708	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147793048	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147793468	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147793831	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147794106	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147794428	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147794715	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147795046	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147795322	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147795733	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147796020	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147796388	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147796744	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551147796983	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10554, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551148069687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RLzpOiEMsdzE"
+1551148074013	Marionette	INFO	Listening on port 37099
+1551148074052	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148074394	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148074404	Marionette	DEBUG	[2147483649] Frame script registered
+1551148074464	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148074858	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148077248	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148078535	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148079049	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148079470	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148084754	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148085039	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148085428	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148085727	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148085994	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148086338	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148086632	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148086935	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148087212	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148087530	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148087831	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148088093	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148088409	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148088704	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148088987	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148089246	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148089648	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148089925	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148090171	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148090414	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148090839	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148091154	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148091406	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148091643	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148091887	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148092227	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148092517	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148092858	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148093175	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148093620	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148093977	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148094444	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148094719	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148094999	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148095240	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148095597	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148095877	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148096163	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 10751, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 10702, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551148398264	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CpjZPqUL3smN"
+1551148402678	Marionette	INFO	Listening on port 32930
+1551148402768	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148402975	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148402976	Marionette	DEBUG	[2147483649] Frame script registered
+1551148403012	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148403489	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148406235	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148407288	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148408091	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148408504	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148413777	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148423175	Marionette	INFO	Stopped listening on port 32930
+1551148441590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.9numf4sNrgDK"
+1551148445859	Marionette	INFO	Listening on port 36146
+1551148445897	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148446248	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148446251	Marionette	DEBUG	[2147483649] Frame script registered
+1551148446311	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148446780	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148449118	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148450554	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148451078	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148451661	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148456978	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148457279	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148510039	Marionette	INFO	Stopped listening on port 36146
+1551148513723	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uuS13iHd4PKt"
+1551148518061	Marionette	INFO	Listening on port 42292
+1551148518096	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148518421	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148518439	Marionette	DEBUG	[2147483649] Frame script registered
+1551148518501	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148518811	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148521080	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148522506	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148523090	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148523407	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148526720	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148527005	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148629218	Marionette	INFO	Stopped listening on port 42292
+1551148632019	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1i3LNpA4jIAu"
+1551148636389	Marionette	INFO	Listening on port 40748
+1551148636464	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148636762	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148636775	Marionette	DEBUG	[2147483649] Frame script registered
+1551148636825	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148637123	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148639374	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148640901	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148641588	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148641971	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148645208	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148645505	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148660914	Marionette	INFO	Stopped listening on port 40748
+1551148662939	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lWCFrB9BcQEY"
+1551148667084	Marionette	INFO	Listening on port 40860
+1551148667139	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148667415	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148667421	Marionette	DEBUG	[2147483649] Frame script registered
+1551148667488	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148667941	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148670445	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148671634	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148672111	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148672588	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148675935	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148676225	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148735781	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JXHbIGRiv31T"
+1551148740575	Marionette	INFO	Listening on port 34057
+1551148740733	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148741054	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148741056	Marionette	DEBUG	[2147483649] Frame script registered
+1551148741134	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148741597	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148744364	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148746194	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148746809	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148747284	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148750580	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148750887	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148761349	Marionette	INFO	Stopped listening on port 40860
+1551148872854	Marionette	INFO	Stopped listening on port 34057
+1551148875591	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Pg7WUlU2dhGt"
+1551148880013	Marionette	INFO	Listening on port 36261
+1551148880142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551148880416	Marionette	DEBUG	[2147483649] Frame script loaded
+1551148880432	Marionette	DEBUG	[2147483649] Frame script registered
+1551148880504	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551148880823	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551148883193	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148884612	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551148885126	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148885567	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148888848	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148889116	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148894445	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148894729	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148895058	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148895358	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148895607	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148895846	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148896193	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148896479	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148896765	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148897058	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148897301	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148897680	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148898000	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148898280	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148898537	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148898828	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148899307	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148899572	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148899830	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148900191	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148900486	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148900792	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148901095	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148901400	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148901833	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148902218	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148902469	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148902912	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148903220	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148903517	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148903810	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148904076	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148904367	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148904615	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148905073	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148905395	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148905652	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148905955	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148906283	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148906543	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148906860	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148907181	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148907544	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148907783	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148908127	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148908412	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148908694	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148908932	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148909315	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551148915243	Marionette	INFO	Stopped listening on port 36261
+1551158933335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wY1wz1Td99hB"
+1551158938832	Marionette	INFO	Listening on port 41459
+1551158938912	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551158939347	Marionette	DEBUG	[2147483649] Frame script loaded
+1551158939377	Marionette	DEBUG	[2147483649] Frame script registered
+1551158939446	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551158940030	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551158942459	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551158944057	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551158944771	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158950866	Marionette	INFO	Stopped listening on port 41459
+1551158969960	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IUjtiXvpfep8"
+1551158974417	Marionette	INFO	Listening on port 37984
+1551158974486	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551158974871	Marionette	DEBUG	[2147483649] Frame script loaded
+1551158974911	Marionette	DEBUG	[2147483649] Frame script registered
+1551158975029	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551158975689	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551158978305	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551158980309	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551158980843	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158983217	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158986610	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158986936	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158992317	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158992649	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158998052	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551158998332	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159003762	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159004113	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159004402	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159004666	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159004932	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159005190	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159010561	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159010815	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159011106	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159011485	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159011732	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159011988	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159012240	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159012494	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159012737	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159012984	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159013220	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159013521	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159013765	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159014039	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159014287	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159019604	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159019846	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159020088	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159020343	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159020631	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159020909	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159021223	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159026646	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159026906	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159027211	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159027558	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159027827	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159033378	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159033688	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159039113	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159039374	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159039702	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159045051	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159045311	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159050836	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159051156	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159051428	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159051689	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159057059	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159057330	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159062697	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159062961	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159068312	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159068584	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159068884	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159074226	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159074477	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159079754	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159080007	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159085486	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159085748	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159091038	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159091298	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159091577	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159091867	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159097205	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159097559	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159097849	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159103218	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159103467	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159103743	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159109103	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159109392	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159109705	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159109983	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159249632	Marionette	INFO	Stopped listening on port 37984
+1551159253342	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eKBojeMZ23j7"
+1551159257484	Marionette	INFO	Listening on port 36813
+1551159257531	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551159257871	Marionette	DEBUG	[2147483649] Frame script loaded
+1551159257886	Marionette	DEBUG	[2147483649] Frame script registered
+1551159257935	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551159258515	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551159261056	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159262548	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159263080	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159265478	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159268779	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159269215	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159274587	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159287180	Marionette	INFO	Stopped listening on port 36813
+1551159289746	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DipN3iZG7z1e"
+1551159294069	Marionette	INFO	Listening on port 36100
+1551159294131	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551159294466	Marionette	DEBUG	[2147483649] Frame script loaded
+1551159294490	Marionette	DEBUG	[2147483649] Frame script registered
+1551159294544	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551159295042	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551159297338	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159298789	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159299245	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159301618	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159304958	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159305309	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159310720	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159311145	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159316452	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159316757	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159322119	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159322369	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159322643	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159322908	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159323171	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159323420	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159328787	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159329107	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159329418	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159329672	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159329908	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159330235	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159330482	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159330747	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159331019	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159331270	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159331555	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159331811	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159332075	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159332354	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159332656	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159337926	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159338202	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159338447	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159338697	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159338964	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159339254	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159339490	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159344755	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159345011	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159345261	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159345535	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159345811	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159351252	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159351583	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159356885	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159357459	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159357866	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159363315	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159363574	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159368990	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159369560	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159369834	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159370229	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159375641	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159375930	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159381275	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159381551	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159386942	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159387227	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159387548	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159392920	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159393186	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159398580	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159398842	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159404131	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159404446	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159409813	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159410067	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159410321	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159410577	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159416110	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159416497	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159416832	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159422197	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159422451	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159422710	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159428072	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159428319	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159428625	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159429032	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159434365	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159434612	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159434892	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159440288	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159440624	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159446044	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159446332	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159446632	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159452027	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159452311	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159452583	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159452851	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159453232	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159458714	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159459094	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159459348	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159459594	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159459843	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159465175	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159465440	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159465683	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159471113	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159471364	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159476695	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159476996	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159477255	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159477513	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159477748	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159478020	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159483398	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159483674	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159483928	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159489374	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159489618	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159489868	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159490118	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159490368	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159490612	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159490852	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159491126	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159491375	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159491738	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159492040	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159492283	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159492544	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159497866	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159498118	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159503487	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159503798	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159539548	Marionette	INFO	Stopped listening on port 36100
+1551159542458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qOEyNXaEQ5VK"
+1551159546889	Marionette	INFO	Listening on port 35667
+1551159546964	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551159547118	Marionette	DEBUG	[2147483649] Frame script loaded
+1551159547153	Marionette	DEBUG	[2147483649] Frame script registered
+1551159547206	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551159548215	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551159550555	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159552342	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551159552834	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159555373	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159558668	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159559114	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159564489	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159564835	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159570242	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159570524	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551159571870	Marionette	INFO	Stopped listening on port 35667
+1551160119844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tfv9aVUgzyj8"
+1551160124527	Marionette	INFO	Listening on port 33402
+1551160124630	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551160124930	Marionette	DEBUG	[2147483649] Frame script loaded
+1551160124945	Marionette	DEBUG	[2147483649] Frame script registered
+1551160124993	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551160125448	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551160128236	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551160129779	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551160130328	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160132882	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160136356	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160136636	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160136960	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160142442	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160142840	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160143106	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160206406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.TUGATuabYBCB"
+1551160211631	Marionette	INFO	Listening on port 34550
+1551160211742	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551160212126	Marionette	DEBUG	[2147483649] Frame script loaded
+1551160212147	Marionette	DEBUG	[2147483649] Frame script registered
+1551160212303	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551160213213	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551160213808	Marionette	INFO	Stopped listening on port 33402
+1551160217716	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551160219271	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.bjs.gov/index.cfm?ty=datool&surl=/arrests/index.cfm#
+1551160219883	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160222280	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160225674	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160226004	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160226306	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160231960	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160232278	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160232524	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160250908	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160251266	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160269750	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160270008	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160288608	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160288957	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160307444	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160307828	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160326288	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160326580	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160345015	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160345239	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160363559	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160363836	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160382283	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160382514	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160400949	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160401174	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160419600	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160419825	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160438156	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160438379	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160456696	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160456923	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160475220	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160475439	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160493752	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551160493973	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1551306214398	Marionette	INFO	Stopped listening on port 34550

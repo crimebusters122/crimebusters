@@ -132,3 +132,5 @@ def get_city_data(csv_filename):
                             delimiter=',', quoting = csv.QUOTE_ALL)
                         data_writer.writerow(data_list)
     driver.close()
+
+get_city_data("bjs_data_2.csv")

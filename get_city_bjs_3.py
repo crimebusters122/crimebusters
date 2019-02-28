@@ -39,7 +39,7 @@ def get_city_data(csv_filename):
                             "Colorado": ['"CO00101"', '"CODPD00"',
                             '"CO02101"'], "Georgia": ['"GAAPD00"'], 
                             "Indiana": ['"IN00201"', '"INIPD00"'], 
-                            "Kansas": ['"KS08703"'], 
+                            "Kansas": ['"KS08703"'], "Kentucky": ['"KY05602"'], 
                             "Minnesota": 
                             ['"MN02711"', '"MN06209"'], "Missouri": ['"MOSPD00"'],
                             "North Carolina": ['"NC04102"', '"NC09201"', '"NC06001"'], 
@@ -95,7 +95,7 @@ def get_city_data(csv_filename):
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
 
-    for option in range (13, 26):
+    for option in range (26, 39):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 
@@ -141,4 +141,4 @@ def get_city_data(csv_filename):
                                     data_writer.writerow(data_list)
     driver.close()
 
-get_city_data("bjs_city_data_2.csv")
+get_city_data("bjs_city_data_3.csv")

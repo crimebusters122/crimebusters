@@ -95,7 +95,7 @@ def get_city_data(csv_filename):
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
 
-    for option in range (0, 20):
+    for option in range (1, 13):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 
@@ -103,34 +103,42 @@ def get_city_data(csv_filename):
             print(state)
             time.sleep(5)
             for department_code in department_code_dict[state]:
-                print(department_code)
-                button = driver.find_elements_by_xpath(
-                    "//option[@value="+department_code+"]")
-                print(button[0].text)
-                if len(button) != 0:
-                    button[0].click()
-                if department_code not in weird_names.keys():
-                    city = button[0].text.split()[0] + ', ' + state_keys[state]
-                else:
-                    print(weird_names[department_code])
-                    city = weird_names[department_code]
-                department = button[0].text
-                for year in range(2001, 2015):
-                    data_list = [str(year), city]
-                    driver.find_elements_by_xpath(
-                        "//option[@value="+str(year)+"]")[0].click()    
-                    driver.find_elements_by_xpath(
-                        "//a[@title='Generate Results']")[0].click()
-                    time.sleep(18)
-                    for thing in grab_from_site:
-                        alpha = driver.find_elements_by_xpath("//td[@title='" +\
-        	                thing + " -- Total all ages']")
-                        if len(alpha) != 0:
-                            data_list.append(alpha[0].text)
-                    with open(csv_filename, mode='a') as data:
-                        data_writer = csv.writer(data, 
-                            delimiter=',', quoting = csv.QUOTE_ALL)
-                        data_writer.writerow(data_list)
+                try:
+                    alert = driver.switch_to.alert
+                    alert.accept()
+                except:
+                    print(department_code)
+                    button = driver.find_elements_by_xpath(
+                        "//option[@value="+department_code+"]")
+                    print(button[0].text)
+                    if len(button) != 0:
+                        button[0].click()
+                    if department_code not in weird_names.keys():
+                        city = button[0].text.split()[0] + ', ' + state_keys[state]
+                    else:
+                        print(weird_names[department_code])
+                        city = weird_names[department_code]
+                    department = button[0].text
+                    for year in range(2001, 2015):
+                        data_list = [str(year), city]
+                        driver.find_elements_by_xpath(
+                            "//option[@value="+str(year)+"]")[0].click()    
+                        driver.find_elements_by_xpath(
+                            "//a[@title='Generate Results']")[0].click()
+                        time.sleep(18)
+                        try:
+                            alert = driver.switch_to.alert
+                            alert.accept()
+                        except:
+                                for thing in grab_from_site:
+                                    alpha = driver.find_elements_by_xpath("//td[@title='" +\
+        	                            thing + " -- Total all ages']")
+                                    if len(alpha) != 0:
+                                        data_list.append(alpha[0].text)
+                                with open(csv_filename, mode='a') as data:
+                                    data_writer = csv.writer(data, 
+                                        delimiter=',', quoting = csv.QUOTE_ALL)
+                                    data_writer.writerow(data_list)
     driver.close()
 
-get_city_data("bjs_data_1.csv")
+get_city_data("bjs_city_data_1.csv")

@@ -1552,3 +1552,710 @@ console.error: BroadcastService:
 1550646623245	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ucrdatatool.gov/Search/Crime/State/RunCrimeStatebyState.cfm
 1550646625352	Marionette	INFO	Stopped listening on port 44952
 [Parent 5751, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1550678662761	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.E6ArHSyERGko"
+1550678670860	Marionette	INFO	Listening on port 33614
+1550678671005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550678671235	Marionette	DEBUG	[2147483649] Frame script loaded
+1550678671248	Marionette	DEBUG	[2147483649] Frame script registered
+1550678709970	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1550678711243	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1550678714663	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550678717539	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1550679485813	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1550679859852	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1550679877980	Marionette	INFO	Stopped listening on port 33614
+1550850893027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.o4jWkeUdgi9x"
+1550850900991	Marionette	INFO	Listening on port 37747
+1550850901181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550850901434	Marionette	DEBUG	[2147483649] Frame script loaded
+1550850901450	Marionette	DEBUG	[2147483649] Frame script registered
+1550850919764	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1550850920690	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1550850923130	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550850925808	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550851238846	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1550851336321	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1550851362038	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1550851427125	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550851427875	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550851427876	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550851430127	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550851432113	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550990341799	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.89O1AALjQclq"
+1550990351094	Marionette	INFO	Listening on port 40633
+1550990351340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550990351568	Marionette	DEBUG	[2147483649] Frame script loaded
+1550990351592	Marionette	DEBUG	[2147483649] Frame script registered
+1550990355723	Marionette	DEBUG	[4294967297] Frame script loaded
+1550990355730	Marionette	DEBUG	[4294967297] Frame script registered
+1550990355843	Marionette	DEBUG	[4294967299] Frame script loaded
+1550990355846	Marionette	DEBUG	[4294967299] Frame script registered
+1550990359894	Marionette	DEBUG	[4294967303] Frame script loaded
+1550990359989	Marionette	DEBUG	[4294967303] Frame script registered
+1550990361401	Marionette	DEBUG	[4294967306] Frame script loaded
+1550990361407	Marionette	DEBUG	[4294967306] Frame script registered
+1550990362355	Marionette	DEBUG	[4294967309] Frame script loaded
+1550990362356	Marionette	DEBUG	[4294967309] Frame script registered
+1550990363146	Marionette	DEBUG	[4294967312] Frame script loaded
+1550990363148	Marionette	DEBUG	[4294967312] Frame script registered
+1550990376101	Marionette	INFO	Stopped listening on port 40633
+1550990382267	Marionette	INFO	Stopped listening on port 37747
+1550990456589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.78Nylj9mYBfC"
+1550990461085	Marionette	INFO	Listening on port 43750
+1550990461282	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550990461432	Marionette	DEBUG	[2147483649] Frame script loaded
+1550990461451	Marionette	DEBUG	[2147483649] Frame script registered
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1550992008377	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1550992009375	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1550992012581	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550992015083	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1550992159156	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1550992415004	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551048671389	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551048680961	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551048855115	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551048857998	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551048857998	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551048860879	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551048873337	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551049683024	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551049758275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.T0r7SMq4KzRH"
+1551049763022	Marionette	INFO	Listening on port 43991
+1551049763373	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551049763716	Marionette	DEBUG	[2147483649] Frame script loaded
+1551049763727	Marionette	DEBUG	[2147483649] Frame script registered
+1551049990991	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551049995141	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551050044517	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551050048698	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1551050200464	Marionette	INFO	Stopped listening on port 43991
+1551050209303	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8ZHKiBh8ErKN"
+1551050213182	Marionette	INFO	Listening on port 39375
+1551050213257	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551050213726	Marionette	DEBUG	[2147483649] Frame script loaded
+1551050213728	Marionette	DEBUG	[2147483649] Frame script registered
+1551050230013	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551050233191	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551050261453	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551050266684	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551050291711	Marionette	INFO	Stopped listening on port 39375
+1551050304992	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kSV6S17mF9t7"
+1551050308713	Marionette	INFO	Listening on port 45532
+1551050308841	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551050309022	Marionette	DEBUG	[2147483649] Frame script loaded
+1551050309035	Marionette	DEBUG	[2147483649] Frame script registered
+1551050317976	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 18148, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 18105, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551050507503	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.knN0NBIAgcnQ"
+1551050511585	Marionette	INFO	Listening on port 32856
+1551050511675	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551050512010	Marionette	DEBUG	[2147483649] Frame script loaded
+1551050512022	Marionette	DEBUG	[2147483649] Frame script registered
+1551050516777	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+
+(firefox:18458): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1551050587520	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551050587525	Marionette	DEBUG	[2147483649] Received DOM event unload for about:blank
+1551050587548	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483649
+1551050633257	Marionette	INFO	Stopped listening on port 32856
+1551050652533	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eXjRVCrRiv7G"
+1551050656828	Marionette	INFO	Listening on port 36567
+1551050657059	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551050657333	Marionette	DEBUG	[2147483649] Frame script loaded
+1551050657352	Marionette	DEBUG	[2147483649] Frame script registered
+1551050659823	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551050695263	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551050695264	Marionette	DEBUG	[2147483649] Received DOM event unload for about:blank
+1551050695266	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483649
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.get@chrome://marionette/content/driver.js:1090:3
+
+1551050695572	Marionette	DEBUG	[4294967297] Frame script loaded
+1551050695580	Marionette	DEBUG	[4294967297] Frame script registered
+1551050695655	Marionette	DEBUG	[4294967299] Frame script loaded
+1551050695656	Marionette	DEBUG	[4294967299] Frame script registered
+1551050705022	Marionette	DEBUG	[4294967303] Frame script loaded
+1551050705027	Marionette	DEBUG	[4294967303] Frame script registered
+1551050706187	Marionette	DEBUG	[4294967306] Frame script loaded
+1551050706188	Marionette	DEBUG	[4294967306] Frame script registered
+1551050707877	Marionette	DEBUG	[4294967309] Frame script loaded
+1551050707878	Marionette	DEBUG	[4294967309] Frame script registered
+[Parent 18693, Gecko_IOThread] WARNING: pipe error (96): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551050709940	Marionette	INFO	Stopped listening on port 36567
+1551050875425	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JaIRoQ7o0hq8"
+1551050879732	Marionette	INFO	Listening on port 36455
+1551050879847	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551050880198	Marionette	DEBUG	[2147483649] Frame script loaded
+1551050880274	Marionette	DEBUG	[2147483649] Frame script registered
+1551051266086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yIqPFtckrM9h"
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1551051270463	Marionette	INFO	Listening on port 38199
+1551051270549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051270805	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051270815	Marionette	DEBUG	[2147483649] Frame script registered
+1551051282580	Marionette	INFO	Stopped listening on port 36455
+1551051297271	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 20340, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 20288, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551051334103	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UYBCyb8ceAqX"
+1551051338578	Marionette	INFO	Listening on port 45929
+1551051338701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051338991	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051338997	Marionette	DEBUG	[2147483649] Frame script registered
+1551051347872	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551051349351	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551051354336	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051357275	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051409521	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051414723	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551051553264	Marionette	INFO	Stopped listening on port 45929
+1551051569370	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lz2ZsF80OFuv"
+1551051574261	Marionette	INFO	Listening on port 42035
+1551051574468	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051574758	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051574768	Marionette	DEBUG	[2147483649] Frame script registered
+1551051584403	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551051585163	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551051589275	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051592106	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051600069	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051605271	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+
+(firefox:21447): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1551051664844	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051670525	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551051738788	Marionette	DEBUG	[4294967297] Frame script loaded
+1551051738789	Marionette	DEBUG	[4294967297] Frame script registered
+1551051742033	Marionette	INFO	Stopped listening on port 42035
+1551051748148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZtXuIEm6g6cI"
+1551051752784	Marionette	INFO	Listening on port 35861
+1551051752882	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051753015	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051753018	Marionette	DEBUG	[2147483649] Frame script registered
+1551051756952	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551051758586	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551051766078	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051773531	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051779610	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051784813	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551051904307	Marionette	INFO	Stopped listening on port 35861
+1551051923055	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EbJIae11jYV2"
+1551051929463	Marionette	INFO	Listening on port 36279
+1551051929623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051929786	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051929848	Marionette	DEBUG	[2147483649] Frame script registered
+
+(firefox:22702): LIBDBUSMENU-GTK-CRITICAL **: dbusmenu_menuitem_property_set_shortcut: assertion 'gtk_accelerator_valid(key, modifier)' failed
+1551051949168	Marionette	DEBUG	[4294967297] Frame script loaded
+1551051949178	Marionette	DEBUG	[4294967297] Frame script registered
+1551051964080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8ZoITLlGefpF"
+1551051969237	Marionette	INFO	Listening on port 33018
+1551051969418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051969829	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051969854	Marionette	DEBUG	[2147483649] Frame script registered
+1551051973865	Marionette	INFO	Stopped listening on port 33018
+1551051977928	Marionette	INFO	Stopped listening on port 36279
+1551051981703	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PEal8zRfrERU"
+1551051987155	Marionette	INFO	Listening on port 35579
+1551051987234	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551051987358	Marionette	DEBUG	[2147483649] Frame script loaded
+1551051987363	Marionette	DEBUG	[2147483649] Frame script registered
+1551051991749	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551051992703	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551051996980	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551051999309	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052012582	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052017786	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052766197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OfBECN5YvmEa"
+1551052772114	Marionette	INFO	Listening on port 39299
+1551052772351	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551052772660	Marionette	DEBUG	[2147483649] Frame script loaded
+1551052772670	Marionette	DEBUG	[2147483649] Frame script registered
+1551052772992	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551052774273	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551052781968	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052784828	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052785221	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052785452	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052785681	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052785726	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052785945	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052785950	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052787219	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052788086	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052818656	Marionette	INFO	Stopped listening on port 35579
+1551052818767	Marionette	INFO	Stopped listening on port 39299
+1551052844092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vN9bjLNmhl8v"
+1551052848446	Marionette	INFO	Listening on port 38329
+1551052848613	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551052848794	Marionette	DEBUG	[2147483649] Frame script loaded
+1551052848799	Marionette	DEBUG	[2147483649] Frame script registered
+1551052848855	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551052851898	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551052856007	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052859610	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052860009	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052860243	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052860474	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052860519	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052860760	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052860760	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052862627	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052863898	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052945278	Marionette	INFO	Stopped listening on port 38329
+1551052949697	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aVtiqFFULcCu"
+1551052954683	Marionette	INFO	Listening on port 44034
+1551052954752	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551052955248	Marionette	DEBUG	[2147483649] Frame script loaded
+1551052955284	Marionette	DEBUG	[2147483649] Frame script registered
+1551052955398	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551052956097	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551052956103	Marionette	DEBUG	[2147483649] Received DOM event unload for about:blank
+1551052956118	Marionette	DEBUG	[2147483649] Received observer notification outer-window-destroyed for 2147483649
+1551052956213	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: TypeError: setting getter-only property "_currentSearchHostname" (resource://activity-stream/lib/TopSitesFeed.jsm:86:5) JS Stack trace: uninit@TopSitesFeed.jsm:86:5
+onAction@TopSitesFeed.jsm:707:9
+_middleware/</<@Store.jsm:51:11
+Store/this[method]@Store.jsm:29:55
+uninit@Store.jsm:170:7
+uninit@ActivityStream.jsm:363:5
+uninit@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@bootstrap.js:86:5
+shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@bootstrap.js:194:3
+callBootstrapMethod@XPIProvider.jsm:1588:20
+_shutdown@XPIProvider.jsm:1724:12
+observe@AsyncShutdown.jsm:541:9
+1551052957087	Marionette	INFO	Stopped listening on port 44034
+1551052983944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.o6wG64k6vzY6"
+1551052987959	Marionette	INFO	Listening on port 42065
+1551052988153	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551052988389	Marionette	DEBUG	[2147483649] Frame script loaded
+1551052988411	Marionette	DEBUG	[2147483649] Frame script registered
+1551052988594	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551052989898	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551052996278	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052998241	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052998624	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052998862	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052999094	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551052999140	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052999399	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551052999409	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053000712	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053001974	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053002231	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053007432	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551053007665	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551053007897	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551053008149	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551053008180	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053008391	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053008392	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053010069	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053011217	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053011417	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551053016619	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551053016651	Marionette	INFO	Stopped listening on port 42065
+1551124512898	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ebzIIIuIE8KL"
+1551124519487	Marionette	INFO	Listening on port 37968
+1551124519622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124519868	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124519875	Marionette	DEBUG	[2147483649] Frame script registered
+1551124520137	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124521856	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124552660	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124564517	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124564899	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124565134	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124565359	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124565404	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124565767	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124565771	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124572627	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124573182	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124573419	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124578620	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124578853	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124579081	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124579307	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124579327	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124579584	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124579595	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124585135	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124586314	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124586503	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124591705	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124591722	Marionette	INFO	Stopped listening on port 37968
+1551124594098	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2GSd3S03X2bs"
+1551124598529	Marionette	INFO	Listening on port 39217
+1551124598673	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124598868	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124598874	Marionette	DEBUG	[2147483649] Frame script registered
+1551124598954	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124600823	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124626379	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124637860	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124638230	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124638455	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124638681	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124638712	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124639131	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124639133	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124647252	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124649079	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124649255	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124654455	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124654767	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124655073	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124655351	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124655373	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124656132	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124656135	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124663962	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124665520	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124665713	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124670915	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124670935	Marionette	INFO	Stopped listening on port 39217
+1551124673815	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YylAb2xIPvJ5"
+1551124679240	Marionette	INFO	Listening on port 33658
+1551124679362	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124679601	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124679620	Marionette	DEBUG	[2147483649] Frame script registered
+1551124679671	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124681388	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124698369	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124701989	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124702355	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124702588	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124702818	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124702858	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124703060	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124703060	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124704703	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124705691	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124705818	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 714, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551124801484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oXMDVv8pAryA"
+1551124805568	Marionette	INFO	Listening on port 44664
+1551124805654	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124805826	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124805829	Marionette	DEBUG	[2147483649] Frame script registered
+1551124806044	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124807440	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124817679	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124821968	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124822336	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124822584	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124822813	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124822876	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124823224	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124823235	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124826905	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124828352	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124828562	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124833764	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124834045	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124834329	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124834549	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124834568	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124835032	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124835038	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124842701	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124844171	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124844417	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124849618	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124849627	Marionette	INFO	Stopped listening on port 44664
+1551124851909	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jg4wwygjLxgZ"
+1551124856040	Marionette	INFO	Listening on port 33454
+1551124856104	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124856233	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124856261	Marionette	DEBUG	[2147483649] Frame script registered
+1551124856345	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124857773	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124873099	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124876303	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124876697	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124876957	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124877188	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124877230	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124877654	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124877668	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124880219	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124881217	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124881385	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124886587	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124886897	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124887187	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124887412	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124887433	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124887766	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124887772	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1164, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 1123, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551124899633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wIfoiEmZJFg5"
+1551124903189	Marionette	INFO	Listening on port 39424
+1551124903260	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124903545	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124903550	Marionette	DEBUG	[2147483649] Frame script registered
+1551124903594	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124904993	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551124916345	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124918827	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124919201	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124919447	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124919683	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124919718	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124919986	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124919997	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124921864	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124923003	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124923223	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124928417	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124928756	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124929037	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124929324	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124929407	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124929709	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124929715	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124931374	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124932976	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124933137	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551124938338	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551124938359	Marionette	INFO	Stopped listening on port 39424
+1551124940925	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.O96t7laUf1Hm"
+1551124944599	Marionette	INFO	Listening on port 34635
+1551124944660	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551124944831	Marionette	DEBUG	[2147483649] Frame script loaded
+1551124944835	Marionette	DEBUG	[2147483649] Frame script registered
+1551124945034	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551124946054	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1458, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 1418, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1551124997984	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WbzgMofWgNFk"
+1551125001386	Marionette	INFO	Listening on port 35435
+1551125001552	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551125001720	Marionette	DEBUG	[2147483649] Frame script loaded
+1551125001731	Marionette	DEBUG	[2147483649] Frame script registered
+1551125001785	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551125003812	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551125023290	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125026004	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125026376	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125026633	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125026861	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125026887	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125027185	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125027192	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125029455	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125030501	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125030681	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125035882	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125036115	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125036342	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125036571	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125036599	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125037098	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125037100	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125044625	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125045097	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125045314	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125050515	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125050521	Marionette	INFO	Stopped listening on port 35435
+1551125070044	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HqJe0PLv8a5y"
+1551125073636	Marionette	INFO	Listening on port 46554
+1551125073705	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551125073900	Marionette	DEBUG	[2147483649] Frame script loaded
+1551125073922	Marionette	DEBUG	[2147483649] Frame script registered
+1551125073953	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551125076912	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551125088131	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125093764	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125094135	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125094389	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125094613	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125094660	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125094905	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125094906	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125097234	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125098255	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125098442	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125103641	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125103867	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125104109	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125104335	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125104359	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125104618	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125104622	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125106579	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125107631	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125107811	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125113012	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125113030	Marionette	INFO	Stopped listening on port 46554
+1551125398423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Xw05458Cf5Ja"
+1551125401975	Marionette	INFO	Listening on port 38301
+1551125402015	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551125402253	Marionette	DEBUG	[2147483649] Frame script loaded
+1551125402261	Marionette	DEBUG	[2147483649] Frame script registered
+1551125402349	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551125403509	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551125411369	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125414043	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125414422	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125414669	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125414900	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125414939	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125415192	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125415202	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125417220	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125418107	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125418336	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125423538	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125423777	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125424006	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125424242	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125424271	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125424492	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125424493	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125426085	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125427072	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125427282	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551125432485	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551125432520	Marionette	INFO	Stopped listening on port 38301
+1551315660843	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.hDjNIjkr89qI"
+1551315667256	Marionette	INFO	Listening on port 45960
+1551315667383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551315667574	Marionette	DEBUG	[2147483649] Frame script loaded
+1551315667584	Marionette	DEBUG	[2147483649] Frame script registered
+1551315667946	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551315668773	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551315672949	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315674795	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315675238	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315675481	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315675712	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315675758	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315675943	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315675952	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315677338	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315678285	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315678444	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315683646	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315683882	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315684120	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315684361	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315684390	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315684553	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315684554	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315685825	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315687158	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315687382	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315692591	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315692626	Marionette	INFO	Stopped listening on port 45960
+1551315748406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JLVXsoMuT91C"
+1551315752684	Marionette	INFO	Listening on port 43985
+1551315752799	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551315753038	Marionette	DEBUG	[2147483649] Frame script loaded
+1551315753050	Marionette	DEBUG	[2147483649] Frame script registered
+1551315753158	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551315754026	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551315757404	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315758700	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315759089	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315759321	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315759550	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315759606	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315759883	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315759890	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315761095	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315761891	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315762062	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315767264	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315767595	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315767892	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315768167	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315768258	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315768561	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315768577	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315769779	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315770802	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315770991	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551315776194	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551315776202	Marionette	INFO	Stopped listening on port 43985
+1551316861904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6Wdsye9xl7RZ"
+1551316865887	Marionette	INFO	Listening on port 38840
+1551316866053	Marionette	WARN	TLS certificate errors will be ignored for this session
+1551316866268	Marionette	DEBUG	[2147483649] Frame script loaded
+1551316866290	Marionette	DEBUG	[2147483649] Frame script registered
+1551316866403	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for about:blank
+1551316867254	Marionette	DEBUG	[2147483649] Received DOM event pagehide for about:blank
+1551316871144	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316873011	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316873398	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316873629	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316873860	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316873906	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316874158	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316874161	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316875418	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316876253	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316876431	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316881632	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316881952	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316882234	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316882515	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316882615	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316882848	Marionette	DEBUG	[2147483649] Received DOM event pagehide for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316882849	Marionette	DEBUG	[2147483649] Received DOM event unload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316884168	Marionette	DEBUG	[2147483649] Received DOM event DOMContentLoaded for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316885307	Marionette	DEBUG	[2147483649] Received DOM event pageshow for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316885551	Marionette	DEBUG	[2147483649] Received DOM event beforeunload for https://www.ojjdp.gov/ojstatbb/ezaucr/asp/ucr_display.asp
+1551316890752	Marionette	DEBUG	[2147483649] Canceled page load listener because no navigation has been detected
+1551316890766	Marionette	INFO	Stopped listening on port 38840
+1551317376630	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aWsFDfV3zeuA"
+[Parent 14349, Gecko_IOThread] WARNING: pipe error (61): Connection reset by peer: file /build/firefox-8oo9jx/firefox-62.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

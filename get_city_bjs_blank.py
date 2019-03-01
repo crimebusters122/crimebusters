@@ -46,11 +46,11 @@ def get_city_data(csv_filename):
                             "Nebraska": ['"NB05501"', '"NB02802"'], "New Jersey": 
                             ['"NJ00906"', '"NJNPD00"'], "Nevada": ['"NV00203"', 
                             '"NV00201"'],
-                            "New York": ['"NY01401"'], 
+                            "New York": ['"NY01401"', '"NY03030"'], 
                             "Ohio": ['"OHCLP00"', '"OHCOP00"'], 
                             "Oklahoma": ['"OK07205"', '"OK05506"'],
                             "Pennsylvania": ['"PAPPD00"', '"PAPEP00"'], 
-                            "Texas": ['"TXHPD00"',
+                            "Texas": ['"TX22001"', '"TXDPD00"', '"TXHPD00"',
                             '"TX17802"', '"TX24001"', '"TX04306"', '"TXSPD00"',
                             '"TX22701"', '"TX22012"', '"TX07102"'], "Virginia": 
                             ['"VA12800"'], "District of Columbia": ['"DCMPD00"'],
@@ -62,7 +62,8 @@ def get_city_data(csv_filename):
                             "Illinois": ['"ILCPD00"']}
     state_keys = {'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', \
                  'Arkansas': 'AR', 'California': 'CA', 'Colorado': 'CO', \
-                 'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', \
+                 'Connecticut': 'CT', 'District of Columbia': 'DC', 
+                 'Delaware': 'DE', 'Florida': 'FL', \
                  'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': \
                  'IL', 'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', \
                  'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', \
@@ -91,6 +92,21 @@ def get_city_data(csv_filename):
                     '"NY03030"': 'New York City, NY', '"TXSPD00"': \
                     'San Antonio, TX'}
 
+    blank_dict = {"Chicago, IL": [2011], "Fort Wayne, IN": [2004, 2005, 2010, 2013], 
+                    "Indianapolis, IN": [2002, 2006, 2010], "Wichita, KS": [2001, 
+                    2009], "Boston, MA": [2003, 2004, 2005], "Detroit, MI": [2003],
+                    "Minneapolis, MN": [2001, 2002, 2003, 2006, 2007, 2008], "St. Paul, MN":
+                    [2001, 2002, 2003, 2004, 2005, 2007], "Lincoln, NE": [2002], "Omaha, NE":
+                    [2001, 2012, 2006], "Newark, NJ": [2009], "Buffalo, NY": [2011],
+                    "Greensboro, NC": [2004, 2010], "Raleigh, NC": [2004, 2009, 2012, 2014],
+                    "Portland, OR": [2013], "Chandler, AZ": [2012], "Mesa, AZ": [2012],
+                    "Phoenix, AZ": [2006], "Oakland, CA": [2002, 2004, 2013], "Riverside, CA":
+                    [2004, 2006, 2009], "Fresno, CA": [2014], "San Francisco, CA": [2007],
+                    "San Jose, CA": [2004], "Arlington, TX": [2003, 2008], "Seattle, WA":
+                    [2001, 2003, 2011], "Milwaukee, WI": [2004], "Charlotte-Mecklenburg, NC":
+                    [2004, 2006], "Cleveland, OH": [2001, 2002, 2003], "Philadelphia, PA": [2011],
+                    "Memphis, TN": [2012], "Plano, TX": [2005], "Fort Worth, TX": [2003, 2005]}
+
     grab_from_site = ['Violent Crime Index', 'Murder and Non-Negligent' +\
     ' Manslaughter', 'Forcible Rape', 'Robbery', 'Aggravated Assault', 'Property' +\
     ' Crime Index', 'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
@@ -99,46 +115,37 @@ def get_city_data(csv_filename):
         driver.find_elements_by_xpath("//option[@value="+str(option)+"]")[0].click()
         state = driver.find_elements_by_xpath(
             "//option[@value="+str(option)+"]")[0].text 
-        if state in department_code_dict:
-            print(state)
-            time.sleep(5)
-            for department_code in department_code_dict[state]:
-                try:
-                    alert = driver.switch_to.alert
-                    alert.accept()
-                except:
-                    print(department_code)
-                    button = driver.find_elements_by_xpath(
-                        "//option[@value="+department_code+"]")
-                    print(button[0].text)
-                    if len(button) != 0:
-                        button[0].click()
-                    if department_code not in weird_names.keys():
-                        city = button[0].text.split()[0] + ', ' + state_keys[state]
-                    else:
-                        print(weird_names[department_code])
-                        city = weird_names[department_code]
-                    department = button[0].text
-                    for year in range(2001, 2015):
-                        data_list = [str(year), city]
-                        driver.find_elements_by_xpath(
-                            "//option[@value="+str(year)+"]")[0].click()    
-                        driver.find_elements_by_xpath(
-                            "//a[@title='Generate Results']")[0].click()
-                        time.sleep(18)
-                        try:
-                            alert = driver.switch_to.alert
-                            alert.accept()
-                        except:
-                                for thing in grab_from_site:
-                                    alpha = driver.find_elements_by_xpath("//td[@title='" +\
-        	                            thing + " -- Total all ages']")
-                                    if len(alpha) != 0:
-                                        data_list.append(alpha[0].text)
-                                with open(csv_filename, mode='a') as data:
-                                    data_writer = csv.writer(data, 
-                                        delimiter=',', quoting = csv.QUOTE_ALL)
-                                    data_writer.writerow(data_list)
+        for city in blank_dict:
+            if city[-2:] == state_keys[state]:
+                print("yeehaw")
+                keys_list = department_code_dict[state]
+                for thing in keys_list:
+                    option = driver.find_elements_by_xpath(
+                        "//option[@value="+thing+"]")
+                    if len(option) != 0:
+                        if city[:-4] in option[0].text:
+                            option[0].click()
+                            for year in blank_dict[city]:
+                                data_list = [str(year), city]
+                                driver.find_elements_by_xpath(
+                                    "//option[@value="+str(year)+"]")[0].click()    
+                                driver.find_elements_by_xpath(
+                                    "//a[@title='Generate Results']")[0].click()
+                                time.sleep(18)
+                                try:
+                                    alert = driver.switch_to.alert
+                                    alert.accept()
+                                except:
+                                        for thing in grab_from_site:
+                                            alpha = driver.find_elements_by_xpath("//td[@title='" +\
+                                                thing + " -- Total all ages']")
+                                            if len(alpha) != 0:
+                                                data_list.append(alpha[0].text)
+                                        with open(csv_filename, mode='a') as data:
+                                            data_writer = csv.writer(data, 
+                                                delimiter=',', quoting = csv.QUOTE_ALL)
+                                            data_writer.writerow(data_list)
+
     driver.close()
 
-get_city_data("bjs_city_data_texas.csv")
+get_city_data("blank_bjs_rows.csv")

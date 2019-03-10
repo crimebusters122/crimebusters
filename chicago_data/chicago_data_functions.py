@@ -8,9 +8,40 @@ import folium
 
 
 
+
+def folium_map_chicago():
+    '''
+    '''
+
+    chicago_coordinates = (41.881832, -87.623177)
+    data_set = pd.read_csv('chicago_crime_2018.csv')
+
+    max_records = 1000
+
+    mp = folium.Map(location = chicago_coordinates, zoom_start = 10)
+
+    geographical_crimes = data_set.dropna()
+
+    for crime in geographical_crimes[0:max_records].iterrows():
+        primary_type = crime[1]['Primary Type']
+        date = crime[1]['Date']
+        folium.Marker(
+            location = [crime[1]['Latitude'], crime[1]['Longitude']], 
+            tooltip = '<b>' + "Type of crime: " + primary_type + \
+                "--- Date: " + date
+        ).add_to(mp)
+    return mp
+
+
+
+
+
+
+'''
+
 def linear_regression(x,y):
     '''
-    Makes a linear regression table
+    #Makes a linear regression table
     '''
 
     model = sm.OLS(y, x).fit()
@@ -22,8 +53,8 @@ def linear_regression(x,y):
 def map_of_chicago_crime(c_type = 'every', year_min = 2001, year_max = 2018,\
     arrest = 'irrelelevant'):
     '''
-    Makes a map of the density of a crime in Chicago.  Clicking on a dot/
-        neighborhood will give you more indepth information.
+    #Makes a map of the density of a crime in Chicago.  Clicking on a dot/
+        #neighborhood will give you more indepth information.
     '''
 
     mp = gdp.read_file('Neighborhoods_2012b.shp')
@@ -63,7 +94,7 @@ def chicago_map():
 
 def get_poly_coords(row, coord, geometry = 'geometry'):
     '''
-    Returns the x or y coordinates of the edges of a polygon
+    #Returns the x or y coordinates of the edges of a polygon
     '''
 
     boundary = row[geometry].boundary
@@ -72,28 +103,4 @@ def get_poly_coords(row, coord, geometry = 'geometry'):
         return list(boundary.coords.xy[0])
     if coord == "y":
         return list(boundary.coord.xy[1])
-
-
-
-def folium_map_chicago():
-	'''
-	'''
-
-	chicago_coordinates = (41.881832, -87.623177)
-	data_set = pd.read_csv('chicago_crime_2018.csv')
-
-	max_records = 1000
-
-	mp = folium.Map(location = chicago_coordinates, zoom_start = 10)
-
-	for crime in data_set[0:max_records].iterrows():
-		folium.Marker(
-			location = [crime[1]['Latitude'], crime[1]['Longitude']], 
-		).add_to(mp)
-	return mp
-
-
-
-
-
-
+'''

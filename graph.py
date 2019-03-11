@@ -3,6 +3,23 @@ import sqlite3 as sql
 import matplotlib.pyplot as plt
 
 
+def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
+    '''
+    Create the graph comparing the two statistics
+
+    Inputs:
+        type1: (string) The type of statistic, (ie: 'crime', 'arrest')
+        stat1: (string) The actually statistic (ie: 'Robbery')
+        type2: (string) The same as type1, but for the second statistic
+        stat2: (string) The same as stat1, but for the second statistic
+    '''
+    DATABASE = './db/crimebusters_data.db'
+    arrest = {''}
+
+    db = sqlite3.connect(DATABASE)
+    c = db.cursor()
+    data = c.execute('')
+
 def clean_data(l):
     '''
     Fills in missing data for years 2001-2014 with linear

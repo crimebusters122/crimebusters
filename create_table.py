@@ -8,6 +8,10 @@ def create_table(csv_path, database_path, table_name):
     c = db.cursor()
     table = pd.read_csv(csv_path)
     columns = tuple(table.columns)
+    c_list = []
+    for element in columns:
+        c_list.append(element.replace(' ','_'))
+    columns = tuple(c_list)
     c.execute('DROP TABLE IF EXISTS '+table_name+';')
     table_info = table_name+' '+str(columns)
     query = 'CREATE TABLE '+table_info+';'

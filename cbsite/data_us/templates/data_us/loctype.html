@@ -1,0 +1,16 @@
+<h2>Select Location Type:</h2>
+
+<form action="/us/" method="post">
+    {% csrf_token %}
+    <button type="submit">United States</button>
+</form>
+
+<form action="/state/" method="post">
+    {% csrf_token %}
+    <button type="submit">State</button>
+</form>
+
+<form action="/city/" method="post">
+    {% csrf_token %}
+    <button type="submit">City</button>
+</form>

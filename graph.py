@@ -14,11 +14,86 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         stat2: (string) The same as stat1, but for the second statistic
     '''
     DATABASE = './db/crimebusters_data.db'
-    arrest = {''}
+    ARREST = {'city' : 'bjs_city',
+              'national' : 'national_arrests'}
+    CRIME = {'city' : 'cities_data',
+             'state' : 'states_data',
+             'national' : 'states_data'}
+    tables = {'arrest' : ARREST,
+              'crime' : CRIME}
 
-    db = sqlite3.connect(DATABASE)
+    db = sql.connect(DATABASE)
     c = db.cursor()
-    data = c.execute('')
+
+    stat1 = stat1.replace(' ','_')
+    stat2 = stat2.replace(' ','_')
+    params = []
+
+    if type2 != 'time':
+        query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
+            loc_type2, stat2, loc2)
+        data = c.execute(query,params)
+        data1 = []
+        data2 = []
+        for elem in data:
+            data1.append(int(elem[0].replace(',','')))
+            data2.append(int(elem[1].replace(',','')))
+        plt.plot(data1,data2)
+    else:
+        table2 = None
+        query = 'SELECT Year,'+stat1+' FROM '+table1
+        if table1 != 'national_arrests':
+            query = query + ' WHERE '+loc_type1+' = ?;'
+            params = [loc1]
+            data = c.execute(query, params)
+        else:
+            query = query + ';'
+            data = c.execute(query, params)
+        plt.plot(data)
+
+    return
+
+def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
+    ARREST = {'city' : 'bjs_city',
+              'national' : 'national_arrests'}
+    CRIME = {'city' : 'cities_data',
+             'state' : 'states_data',
+             'national' : 'states_data'}
+    tables = {'arrest' : ARREST,
+              'crime' : CRIME}
+
+    table1 = tables[type1][loc_type1]
+    table2 = tables[type2][loc_type2]
+    params = []
+    query = 'SELECT '+stat1+', '+stat2+' FROM '
+    if table1 == table2:
+        query = query + table1
+    else:
+        query = query+table1+' JOIN '+table2+' ON '+table1\
+        +'.Year = '+table2+'.Year'
+    if table1 == 'states_data':
+        query = query + ' WHERE states_data.State = ?'
+        params.append(loc1)
+    elif table1 != 'national_arrests':
+        query = query + ' WHERE '+table1+'.City = ?'
+        params.append(loc1)
+    elif table2 != 'national_arrests':
+        query = query + ' WHERE '
+    if table2 == 'states_data':
+        if query[-1] == '?':
+            query = query + ' AND '
+        query = query + 'states_data.State = ?;'
+        params.append(loc2)
+    elif table2 != 'national_arrests':
+        if query[-1] == '?':
+            query = query + ' AND '
+        query = query+table2+'.City = ?;'
+        params.append(loc2)
+    else:
+        query = query + ';'
+
+    return query, params
+
 
 def clean_data(l):
     '''

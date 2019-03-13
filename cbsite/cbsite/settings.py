@@ -31,9 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'city',
-    'state',
-    'us',
+    'data_chicago',
     'data_us',
     'home',
     'django.contrib.admin',
@@ -42,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jquery',
 ]
 
 MIDDLEWARE = [

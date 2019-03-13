@@ -1,0 +1,126 @@
+
+{% block content %}
+
+<h2>Choice 1</h2>
+<form id="Choice1Form" method="post" data-locs-1-url="{% url 'ajax_load_locs_1' %}" data-var-types-1-url="{% url 'ajax_load_var_types_1' %}" data-vars-1-url="{% url 'ajax_load_vars_1' %}" novalidate>
+    {% csrf_token %}
+    {{ form_1 }}
+</form>
+
+<h2>Choice 2</h2>
+<form id="Choice2Form" method="post" data-locs-2-url="{% url 'ajax_load_locs_2' %}" data-var-types-2-url="{% url 'ajax_load_var_types_2' %}" data-vars-2-url="{% url 'ajax_load_vars_2' %}" novalidate>
+    {% csrf_token %}
+    {{ form_2 }}
+</form>
+
+<button type="submit">Compare</button>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_1").change(function () {
+      var url = $("#Choice1Form").attr("data-locs-1-url");
+      var loc_type_1 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_1': loc_type_1
+        },
+        success: function ( data ) {
+            $("#id_location_1").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_1").change(function () {
+      var url = $("#Choice1Form").attr("data-var-types-1-url");
+      var loc_type_1 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_1': loc_type_1
+        },
+        success: function ( data ) {
+            $("#id_variable_type_1").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_type_1").change(function () {
+      var url = $("#Choice1Form").attr("data-vars-1-url");
+      var var_type_1 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_1': var_type_1
+        },
+        success: function ( data ) {
+            $("#id_variable_1").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_2").change(function () {
+      var url = $("#Choice2Form").attr("data-locs-2-url");
+      var loc_type_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_2': loc_type_2
+        },
+        success: function ( data ) {
+            $("#id_location_2").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_2").change(function () {
+      var url = $("#Choice2Form").attr("data-var-types-2-url");
+      var loc_type_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_2': loc_type_2
+        },
+        success: function ( data ) {
+            $("#id_variable_type_2").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_type_2").change(function () {
+      var url = $("#Choice2Form").attr("data-vars-2-url");
+      var var_type_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_2': var_type_2
+        },
+        success: function ( data ) {
+            $("#id_variable_2").html(data);
+        }
+      });
+    });
+</script>
+
+{% endblock %}

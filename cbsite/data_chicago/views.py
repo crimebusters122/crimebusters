@@ -31,27 +31,15 @@ states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', \
 def get_loc_type(request):
     if request.method == 'POST':
         form_1 = VariableChoices1(request.POST)
-        form_2 = VariableChoices2(request.POST)
         return HttpResponseRedirect('')
     else:
         form_1 = VariableChoices1()
-        form_2 = VariableChoices2()
-    forms = {'form_1': form_1, 'form_2': form_2}
+    forms = {'form_1': form_1}
     return render(request, 'data_us/loctype.html', forms)
 
 
 def load_locs_1(request):
     loc_type = request.GET.get('location_type_1')
-    if loc_type == 'country':
-          locs = ['United States']
-    elif loc_type == 'state':
-        locs = states
-    elif loc_type == 'city':
-        locs = get_cities()
-    return render(request, 'data_us/loc_dropdown_options.html', {'locs': locs})
-
-def load_locs_2(request):
-    loc_type = request.GET.get('location_type_2')
     if loc_type == 'country':
           locs = ['United States']
     elif loc_type == 'state':
@@ -71,64 +59,9 @@ def load_var_types_1(request):
     return render(request, 'data_us/var_type_dropdown_options.html', \
                 {'var_types': var_types})
 
-def load_var_types_2(request):
-    loc_type = request.GET.get('location_type_2')
-    if loc_type == 'state':
-        var_types = ['Crime']
-    elif loc_type == 'country':
-        var_types = ['Arrest', 'Crime']
-    elif loc_type == 'city':
-        var_types = ['Arrest', 'Crime']
-    return render(request, 'data_us/var_type_dropdown_options.html', \
-                {'var_types': var_types})
-
 
 def load_vars_1(request):
     var_type = request.GET.get('variable_type_1')
-    if var_type == 'state_crime':
-        variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
-                    'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-                    'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft', \
-                    'Violent Crime Rate', 'Murder and Nonnegligent Manslaughter Rate', \
-                    'Rape Rate', 'Robbery Rate', 'Aggravated Assault Rate', \
-                    'Property Crime Rate', 'Burglary Rate', 'Larceny-Theft Rate', \
-                    'Motor Vehicle Theft Rate']
-    elif var_type == 'city_crime':
-        variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
-                'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-                'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft', \
-                'Violent Crime Rate', 'Murder and Nonnegligent Manslaughter Rate', \
-                'Rape Rate', 'Robbery Rate', 'Aggravated Assault Rate', \
-                'Property Crime Rate', 'Burglary Rate', 'Larceny-Theft Rate', \
-                'Motor Vehicle Theft Rate']
-    elif var_type == 'city_arrest':
-        variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
-                    'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-                    'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft']
-    elif var_type == 'us_crime':
-        variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
-                'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
-                'Burglary', 'Larceny-Theft', 'Motor Vehicle Theft', \
-                'Violent Crime Rate', 'Murder and Nonnegligent Manslaughter Rate', \
-                'Rape Rate', 'Robbery Rate', 'Aggravated Assault Rate', \
-                'Property Crime Rate', 'Burglary Rate', 'Larceny-Theft Rate', \
-                'Motor Vehicle Theft Rate']
-    elif var_type == 'us_arrest':
-        variables = ['Total Arrests', 'Violent Crime Index', \
-                    'Murder and Nonnegligent Manslaughter', 'Rape', 'Robbery', \
-                    'Aggravated Assault', 'Property Crime Index', 'Burglary', \
-                    'Larceny-Theft', 'Motor Vehicle Theft', 'Arson', \
-                    'Forgery and Counterfeiting', 'Fraud', 'Embezzlement', \
-                    'Stolen Property', 'Vandalism', 'Weapons', 'Prostitution', \
-                    'Sex Offenses', 'Drug Abuse Violations', \
-                    'Driving Under the Influence', 'Gambling', 'Liquor Laws', \
-                    'Drunkenness', 'Disorderly Conduct', 'Vagrancy', \
-                    'Curfew and Loitering', 'Runaways']
-    return render(request, 'data_us/vars_dropdown_options.html', \
-            {'variables': variables})
-
-def load_vars_2(request):
-    var_type = request.GET.get('variable_type_2')
     if var_type == 'state_crime':
         variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
                     'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \

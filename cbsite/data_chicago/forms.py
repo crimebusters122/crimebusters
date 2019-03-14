@@ -41,9 +41,9 @@ class FormThing(forms.ModelForm):
                     widget=forms.Select(choices=years))
         self.fields['crime type'] = forms.CharField(label="Crime type", \
                     widget=forms.Select(choices=crimes))
-        self.fields['variable_type_1'] = forms.CharField(label="Tooltips?", \
+        self.fields['tooltips'] = forms.CharField(label="Tooltips?", \
                     widget=forms.Select(choices=tooltips))
-        self.fields['variable_1'] = forms.CharField(label="How many data points?", \
+        self.fields['data_points'] = forms.CharField(label="How many data points?", \
                     widget=forms.Select(choices=[]))
 
 

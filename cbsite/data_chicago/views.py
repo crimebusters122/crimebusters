@@ -4,16 +4,17 @@ from django.http import HttpResponseRedirect
 
 from . import models
 from .models import LocationType1
-from .forms import VariableChoices1, YearForm
+from .forms import InputForm
 import sqlite3
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, ListView
 
-def get_year(request):
-    form1 = YearForm
-    return render(request, 'data_chicago/yr_dropdown_options.html', {'years': YearForm})
+def stuff(request):
+    if request.method == 'POST':
+        form = InputForm(request.POST)
+        if form.is_valid():
+            return HttpResponseRedirect('')
+    else:
+        form = InputForm()
 
-
-def get_crimes(request):
-    form2 = CrimeForm
-    return render(request, 'data_chicago/crime_dropdown_options.html', {'crimes': CrimeForm})
+    return render(request, 'data_chicago/loctype.html', {'Form': form})

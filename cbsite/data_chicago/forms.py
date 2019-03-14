@@ -31,19 +31,16 @@ crimes = [('violent crime total', 'Violent Crime Total'), \
 
 tooltips = [('yes', 'yes'), ('no', 'no')]
 
-class FormThing(forms.ModelForm):
-    class Meta:
-        fields = ['years', 'crimes', 'tooltips', 'data_points']
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['year'] = forms.CharField(label="Year", \
+class InputForm(forms.Form):
+    yearfield = forms.CharField(label="Year", \
                     widget=forms.Select(choices=years))
-        self.fields['crime type'] = forms.CharField(label="Crime type", \
+    crimefield = forms.CharField(label="Crime type", \
                     widget=forms.Select(choices=crimes))
-        self.fields['tooltips'] = forms.CharField(label="Tooltips?", \
+    tooltipfield = forms.CharField(label="Tooltips?", \
                     widget=forms.Select(choices=tooltips))
-        self.fields['data_points'] = forms.CharField(label="How many data points?", \
-                    widget=forms.Select(choices=[]))
+    datapointfield = forms.CharField(label="How many data points?", \
+                    max_length=100)
+
 
 

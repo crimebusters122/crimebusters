@@ -28,7 +28,6 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     stat1 = stat1.replace(' ','_')
     stat2 = stat2.replace(' ','_')
     params = []
-    plt.figure()
 
     if type2 != 'time':
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
@@ -37,8 +36,9 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         data1 = []
         data2 = []
         for elem in data:
-            data1.append(int(elem[0].replace(',','')))
-            data2.append(int(elem[1].replace(',','')))
+            if (elem[0] != 'nan') and (elem[1] != 'nan'):
+                data1.append(int(elem[0].replace(',','')))
+                data2.append(int(elem[1].replace(',','')))
         plt.plot(data1,data2)
         plt.show()
     else:
@@ -54,7 +54,9 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         plt.plot(data)
         plt.show()
 
+    db.close()
     return
+
 
 def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     ARREST = {'city' : 'bjs_city',
@@ -68,7 +70,7 @@ def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     table1 = tables[type1][loc_type1]
     table2 = tables[type2][loc_type2]
     params = []
-    query = 'SELECT '+stat1+', '+stat2+' FROM '
+    query = 'SELECT '+table1+'.'+stat1+', '+table2+'.'+stat2+' FROM '
     if table1 == table2:
         query = query + table1
     else:

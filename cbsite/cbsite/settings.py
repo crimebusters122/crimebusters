@@ -80,7 +80,11 @@ WSGI_APPLICATION = 'cbsite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+<<<<<<< HEAD
+        'NAME': '/home/student/crimebusters/crimebusters/db/crimebusters_data.db',
+=======
         'NAME': '/home/axemanscrums/crimebusters/db/crimebusters_data.db',
+>>>>>>> 808511d104630501c6b31965a565e1314e2eb668
     }
 }
 

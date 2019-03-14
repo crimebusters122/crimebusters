@@ -10,6 +10,7 @@ from django.urls import reverse
 from django.views.generic import CreateView, ListView, UpdateView
 from django.shortcuts import redirect
 from urllib.parse import urlencode
+from . import simple_graph
 
 crime_variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
                     'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
@@ -218,14 +219,16 @@ def load_graph_vars(request):
     graph_vars.append(('location_2', loc_2))
     graph_vars.append(('variable_1', var_1))
     graph_vars.append(('variable_2', var_2))   
-    loc_1 = loc_1.replace('_', ' ').title()
-    loc_2 = loc_2.replace('_', ' ').title()
-    var_1 = var_1.replace('_', ' ').title()
-    var_2 = var_2.replace('_', ' ').title()
-    loaded = graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \
+    loc_1 = loc_1.replace('_', ' ').capitalize()
+    loc_2 = loc_2.replace('_', ' ').capitalize()
+    var_1 = var_1.replace('_', ' ').capitalize()
+    var_2 = var_2.replace('_', ' ').capitalize()
+    print(var_1)
+    print(var_2)
+    simple_graph.simple(1)
+    graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \
             loc_type_2, var_2, loc_2)
-    print(loaded)
-    return render(request, 'data_us/go_to_graph.html', {'graph_vars': graph_vars, 'loaded': loaded})
+    return render(request, 'data_us/go_to_graph.html', {'graph_vars': graph_vars})
 
 def load_graph(request):
     if request.GET.get('btn'):

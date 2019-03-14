@@ -10,7 +10,7 @@ def create_table(csv_path, database_path, table_name):
     columns = tuple(table.columns)
     c_list = []
     for element in columns:
-        c_list.append(element.replace(' ','_'))
+        c_list.append(element.title().replace(' ','_'))
     columns = tuple(c_list)
     c.execute('DROP TABLE IF EXISTS '+table_name+';')
     table_info = table_name+' '+str(columns)

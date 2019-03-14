@@ -29,14 +29,18 @@ crimes = [('violent crime total', 'Violent Crime Total'), \
                     ('larceny-theft rate', 'Larceny-Theft Rate'), \
                     ('motor vehicle theft rate', 'Motor Vehicle Theft Rate')]
 
+tooltips = [('yes', 'yes'), ('no', 'no')]
 
 
-class YearForm(forms.Form):
-    year_type = forms.CharField(label="Year", \
-                    widget=forms.Select(choices=years))
+class InputForm(forms.Form):
+    yearfield = forms.CharField(label="Year", \
+                    widget=forms.Select(choices=years), required=False)
+    crimefield = forms.CharField(label="Crime type", \
+                    widget=forms.Select(choices=crimes), required=False)
+    tooltipfield = forms.CharField(label="Tooltips?", \
+                    widget=forms.Select(choices=tooltips), required=False)
+    datapointfield = forms.CharField(label="How many data points?", \
+                    max_length=100, required=False)
 
-class CrimeForm(forms.Form):
-    crime_type = forms.CharField(label="Crime", \
-                    widget=forms.Select(choices=crimes))
 
 

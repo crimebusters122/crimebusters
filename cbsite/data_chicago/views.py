@@ -17,4 +17,4 @@ def stuff(request):
     else:
         form = InputForm()
 
-    return render(request, 'data_chicago/loctype.html', {'Form': form})
+    return render(request, 'data_chicago/loctype.html', {'form': form})

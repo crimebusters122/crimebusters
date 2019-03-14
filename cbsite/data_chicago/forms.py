@@ -34,13 +34,13 @@ tooltips = [('yes', 'yes'), ('no', 'no')]
 
 class InputForm(forms.Form):
     yearfield = forms.CharField(label="Year", \
-                    widget=forms.Select(choices=years))
+                    widget=forms.Select(choices=years), required=False)
     crimefield = forms.CharField(label="Crime type", \
-                    widget=forms.Select(choices=crimes))
+                    widget=forms.Select(choices=crimes), required=False)
     tooltipfield = forms.CharField(label="Tooltips?", \
-                    widget=forms.Select(choices=tooltips))
+                    widget=forms.Select(choices=tooltips), required=False)
     datapointfield = forms.CharField(label="How many data points?", \
-                    max_length=100)
+                    max_length=100, required=False)
 
 
 

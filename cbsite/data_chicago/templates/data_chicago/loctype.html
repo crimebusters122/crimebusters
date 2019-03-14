@@ -1,13 +1,7 @@
 
-{% block content %}
-
 <h2>Pick what you want for the map!</h2>
-<form id="Total form" method="post" data-year-url="{% url 'load_years' %}" data-crimes-url="{% url 'load_crimes' %}" 
-data-vars-1-url="{% url 'load_tooltips' %}" novalidate>
+<form action="/my_form/" method="post">
     {% csrf_token %}
-    {{ form_1 }}
+    {{ form }}
+    <input type="submit" value="Submit!">
 </form>
-
-<button type="submit">Compare</button>
-
-{% endblock %}

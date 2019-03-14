@@ -34,8 +34,6 @@ crimes = [('violent crime total', 'Violent Crime Total'), \
 class YearForm(forms.Form):
     year_type = forms.CharField(label="Year", \
                     widget=forms.Select(choices=years))
-
-class CrimeForm(forms.Form):
     crime_type = forms.CharField(label="Crime", \
                     widget=forms.Select(choices=crimes))
 

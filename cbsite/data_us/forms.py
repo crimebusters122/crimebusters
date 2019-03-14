@@ -2,7 +2,8 @@ from django import forms
 from django.forms import ModelForm
 from . import models
 from .models import LocationType1, Location1, VariableType1, VariableChoices1, \
-                    LocationType2, Location2, VariableType2, VariableChoices2
+                    LocationType2, Location2, VariableType2, VariableChoices2, \
+                    NextPage
 from smart_selects.db_fields import ChainedForeignKey
 import sqlite3
 
@@ -66,10 +67,8 @@ class VariableChoices1(forms.ModelForm):
                     widget=forms.Select(choices=[]))
         self.fields['variable_1'] = forms.CharField(label="Variable", \
                     widget=forms.Select(choices=[]))
-        print('location_type_1' in self.data)
 
         if 'location_type_1' in self.data:
-          print(True)
           try:
             loc_type = self.data.get('location_type_1')
             if loc_type == 'Country':
@@ -336,3 +335,10 @@ class VariableChoices2(forms.ModelForm):
           except (ValueError, TypeError):
             pass
 
+
+class NextPageForm(forms.ModelForm):
+    class Meta:
+        model = models.NextPage
+        fields = ['variable_type_1', 'location_type_1', 'variable_1', \
+                  'location_1', 'variable_type_2', 'location_type_2', \
+                  'variable_2', 'location_2']

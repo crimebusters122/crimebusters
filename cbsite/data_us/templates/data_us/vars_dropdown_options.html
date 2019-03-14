@@ -1,4 +1,6 @@
+
+
 <option value="">---------</option>
-{% for variable in variables %}
-<option value="variable">{{ variable }}</option>
+{% for x, y in zipped %}
+<option value={{ x }}>{{ y }}</option>
 {% endfor %}

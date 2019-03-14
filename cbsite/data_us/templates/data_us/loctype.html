@@ -8,12 +8,14 @@
 </form>
 
 <h2>Choice 2</h2>
-<form id="Choice2Form" method="post" data-locs-2-url="{% url 'ajax_load_locs_2' %}" data-var-types-2-url="{% url 'ajax_load_var_types_2' %}" data-vars-2-url="{% url 'ajax_load_vars_2' %}" novalidate>
+<form id="Choice2Form" method="post" data-locs-2-url="{% url 'ajax_load_locs_2' %}" data-var-types-2-url="{% url 'ajax_load_var_types_2' %}" data-vars-2-url="{% url 'ajax_load_vars_2' %}" data-graph-vars-url="{% url 'ajax_load_graph_vars' %}" data-graph-url="{% url 'ajax_load_graph' %}" novalidate>
     {% csrf_token %}
     {{ form_2 }}
+    <form id="Graph" action="{% url 'ajax_load_graph' %}" method='POST'>
+        <button id="Submit" data-graph-url/>Compare</button>
+    </form>
 </form>
 
-<button type="submit">Compare</button>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
@@ -56,11 +58,13 @@
     $("#id_variable_type_1").change(function () {
       var url = $("#Choice1Form").attr("data-vars-1-url");
       var var_type_1 = $(this).val();
+      var loc_type_1 = $("#id_location_type_1").val();
 
       $.ajax({
         url: url,
         data: {
-            'variable_type_1': var_type_1
+            'variable_type_1': var_type_1,
+            'location_type_1': loc_type_1
         },
         success: function ( data ) {
             $("#id_variable_1").html(data);
@@ -109,12 +113,22 @@
 <script>
     $("#id_variable_type_2").change(function () {
       var url = $("#Choice2Form").attr("data-vars-2-url");
+      var var_type_1 = $("#id_variable_type_1").val();
       var var_type_2 = $(this).val();
+      var loc_type_1 = $("#id_location_type_1").val();
+      var loc_type_2 = $("#id_location_type_2").val();
+      var loc_1 = $("#id_location_1").val();
+      var loc_2 = $("#id_location_2").val();
 
       $.ajax({
         url: url,
         data: {
-            'variable_type_2': var_type_2
+            'variable_type_1': var_type_1,
+            'variable_type_2': var_type_2,
+            'location_type_1': loc_type_1,
+            'location_type_2': loc_type_2,
+            'location_1': loc_1,
+            'location_2': loc_2
         },
         success: function ( data ) {
             $("#id_variable_2").html(data);
@@ -122,5 +136,49 @@
       });
     });
 </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_2").change(function () {
+      var url = $("#Choice2Form").attr("data-graph-vars-url");
+      var var_type_1 = $("#id_variable_type_1").val();
+      var var_type_2 = $("#id_variable_type_2").val();
+      var loc_type_1 = $("#id_location_type_1").val();
+      var loc_type_2 = $("#id_location_type_2").val();
+      var loc_1 = $("#id_location_1").val();
+      var loc_2 = $("#id_location_2").val();
+      var var_1 = $("#id_variable_1").val();
+      var var_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_1': var_type_1,
+            'variable_type_2': var_type_2,
+            'location_type_1': loc_type_1,
+            'location_type_2': loc_type_2,
+            'location_1': loc_1,
+            'location_2': loc_2,
+            'variable_1': var_1,
+            'variable_2': var_2
+        },
+        success: function ( data ) {
+            $("#Submit").html(data);
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    
+    $("#Graph").ready( function() {
+
+        $("#Submit").click( function(event) {
+        alert("You clicked the button using JQuery!");
+    });
+});
+</script>
+
 
 {% endblock %}

@@ -1,4 +1,5 @@
+
 <option value="">---------</option>
-{% for loc in locs %}
-<option value="loc">{{ loc }}</option>
+{% for x,y in zipped %}
+<option value={{ x }}>{{ y }}</option>
 {% endfor %}

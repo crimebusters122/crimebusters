@@ -12,6 +12,16 @@ def map_chicago_crime_db(
     prim_type = False,
     ):
     '''
+    Makes an interactive Folium map of Chicago.
+
+    Inputs:
+        quick (bool): whether to include a tooltip over the points on the map
+        num (int): The number of points you want to see
+        year (int or bool): The year you want to look at
+        prim_type (str of bool): The type of crime you want to look at
+
+    Output:
+        A Folium map object
     '''
 
     data_base_path = 'chicago_crime.db'

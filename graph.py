@@ -28,6 +28,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     stat1 = stat1.replace(' ','_')
     stat2 = stat2.replace(' ','_')
     params = []
+    plt.figure()
 
     if type2 != 'time':
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
@@ -39,6 +40,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
             data1.append(int(elem[0].replace(',','')))
             data2.append(int(elem[1].replace(',','')))
         plt.plot(data1,data2)
+        plt.show()
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
@@ -50,6 +52,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
             query = query + ';'
             data = c.execute(query, params)
         plt.plot(data)
+        plt.show()
 
     return
 

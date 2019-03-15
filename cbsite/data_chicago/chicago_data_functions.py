@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd 
 import folium
 import folium.plugins
+from folium.plugins import MarkerCluster, FastMarkerCluster
 import sqlite3
 
 
@@ -24,7 +25,7 @@ def map_chicago_crime_db(
         A Folium map object
     '''
 
-    data_base_path = 'chicago_crime.db'
+    data_base_path = '/home/axemanscrums/crimebusters/db/chicago_crime.db'
     chicago_coordinates = (41.881832, -87.623177)
 
     db_connection = sqlite3.connect(data_base_path)
@@ -37,6 +38,7 @@ def map_chicago_crime_db(
     print(query)
 
     r = db_cursor.execute(query, [num])
+    print(r)
 
     data = r.fetchall()
     print(data[0])

@@ -31,7 +31,11 @@ def load_data(request):
         form = InputForm(request.POST)
         if form.is_valid():
             year = form.cleaned_data['yearfield']
+            if year == 'ALL YEARS':
+                year = None
             crumb = form.cleaned_data['crimefield']
+            if crumb == 'ALL CRIMES':
+                crumb = False
             tooltips = form.cleaned_data['tooltipfield']
             datapoints = form.cleaned_data['datapointfield']
             if tooltips == "yes":

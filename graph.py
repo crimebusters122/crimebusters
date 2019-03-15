@@ -1,6 +1,7 @@
 ### Create statistic vs. statistic plots for website ###
 import sqlite3 as sql
 import matplotlib.pyplot as plt
+import 
 
 
 def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
@@ -41,7 +42,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
                 data1.append(int(elem[0].replace(',','')))
                 data2.append(int(elem[1].replace(',','')))
-        plot(data1,data2=data2,pres_stat1,pres_stat2)
+        plot(data1,pres_stat1,pres_stat2, data2=data2)
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
@@ -57,7 +58,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     db.close()
     return
 
-def plot(data1, data2=None, stat1, stat2):
+def plot(data1, stat1, stat2, data2=None):
     fig = plt.figure()
     if data2:
         plt.plot(data1,data2, color='blue', linestyle='', marker='x')

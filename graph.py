@@ -1,7 +1,7 @@
 ### Create statistic vs. statistic plots for website ###
 import sqlite3 as sql
 import matplotlib.pyplot as plt
-import 
+import regression
 
 
 def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):

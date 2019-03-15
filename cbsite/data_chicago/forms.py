@@ -12,22 +12,41 @@ years = [('2001', '2001'), ('2002', '2002'), ('2003', '2003'), ('2004', '2004'),
             ('2013', '2013'), ('2014', '2014'), ('2015', '2015'), ('2016', '2016'),
             ('2017', '2017'), ('2018', '2018')]
 
-crimes = [('violent crime total', 'Violent Crime Total'), \
-                      ('murder and nonnegligent manslaughter', \
-                        'Murder and Nonnegligent Manslaughter'), \
-                    ('rape', 'Rape'), ('robbery', 'Robbery'), ('aggravated assault', \
-                      'Aggravated Assault'), ('property crime total', \
-                      'Property Crime Total'), ('burglary', 'Burglary'), \
-                    ('larceny-theft', 'Larceny-Theft'), ('motor vehicle theft', \
-                      'Motor Vehicle Theft'), ('violent crime rate', 'Violent Crime Rate'), \
-                    ('murder and nonnegligent manslaughter rate', \
-                      'Murder and Nonnegligent Manslaughter Rate'), \
-                    ('rape rate', 'Rape Rate'), ('robbery rate', 'Robbery Rate'), \
-                    ('aggravated assault rate', 'Aggravated Assault Rate'), \
-                    ('property crime rate', 'Property Crime Rate'), \
-                    ('burglary rate', 'Burglary Rate'), \
-                    ('larceny-theft rate', 'Larceny-Theft Rate'), \
-                    ('motor vehicle theft rate', 'Motor Vehicle Theft Rate')]
+crimes = [('MOTOR VEHICLE THEFT', 'MOTOR VEHICLE THEFT'),
+ ('ROBBERY', 'ROBBERY'),
+ ('ASSAULT', 'ASSAULT'),
+ ('BATTERY', 'BATTERY'),
+ ('PROSTITUTION', 'PROSTITUTION'),
+ ('THEFT', 'THEFT'),
+ ('OTHER OFFENSE', 'OTHER OFFENSE'),
+ ('NARCOTICS', 'NARCOTICS'),
+ ('BURGLARY', 'BURGLARY'),
+ ('OFFENSE INVOLVING CHILDREN', 'OFFENSE INVOLVING CHILDREN'),
+ ('GAMBLING', 'GAMBLING'),
+ ('DECEPTIVE PRACTICE', 'DECEPTIVE PRACTICE'),
+ ('WEAPONS VIOLATION', 'WEAPONS VIOLATION'),
+ ('SEX OFFENSE', 'SEX OFFENSE'),
+ ('CRIMINAL DAMAGE', 'CRIMINAL DAMAGE'),
+ ('CRIMINAL TRESPASS', 'CRIMINAL TRESPASS'),
+ ('CRIM SEXUAL ASSAULT', 'CRIM SEXUAL ASSAULT'),
+ ('HOMICIDE', 'HOMICIDE'),
+ ('STALKING', 'STALKING'),
+ ('PUBLIC PEACE VIOLATION', 'PUBLIC PEACE VIOLATION'),
+ ('ARSON', 'ARSON'),
+ ('INTIMIDATION', 'INTIMIDATION'),
+ ('INTERFERENCE WITH PUBLIC OFFICER', 'INTERFERENCE WITH PUBLIC OFFICER'),
+ ('KIDNAPPING', 'KIDNAPPING'),
+ ('LIQUOR LAW VIOLATION', 'LIQUOR LAW VIOLATION'),
+ ('OBSCENITY', 'OBSCENITY'),
+ ('NON-CRIMINAL', 'NON-CRIMINAL'),
+ ('PUBLIC INDECENCY', 'PUBLIC INDECENCY'),
+ ('CONCEALED CARRY LICENSE VIOLATION', 'CONCEALED CARRY LICENSE VIOLATION'),
+ ('HUMAN TRAFFICKING', 'HUMAN TRAFFICKING'),
+ ('OTHER NARCOTIC VIOLATION', 'OTHER NARCOTIC VIOLATION'),
+ ('RITUALISM', 'RITUALISM'),
+ ('NON-CRIMINAL (SUBJECT SPECIFIED)', 'NON-CRIMINAL (SUBJECT SPECIFIED)'),
+ ('NON - CRIMINAL', 'NON - CRIMINAL'),
+ ('DOMESTIC VIOLENCE', 'DOMESTIC VIOLENCE')]
 
 tooltips = [('yes', 'yes'), ('no', 'no')]
 

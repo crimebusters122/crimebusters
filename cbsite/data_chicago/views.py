@@ -15,22 +15,26 @@ def stuff(request):
         form = InputForm(request.POST)
         if form.is_valid():
             year = form.cleaned_data['yearfield']
-            crime = form.cleaned_data['crimefield']
+            crumb = form.cleaned_data['crimefield']
             tooltips = form.cleaned_data['tooltipfield']
             datapoints = form.cleaned_data['datapointfield']
-            request_list = [year, crime, tooltips, datapoints]
-            load_map(year, crime, tooltips, datapoints)
+            load_map(year, crumb, tooltips, datapoints)
             return HttpResponseRedirect('')
     else:
         form = InputForm()
 
     return render(request, 'data_chicago/loctype.html', {'form': form})
 
-def load_map(year, crime, tooltips, datapoints):
+def load_map(year, crumb, tooltips, datapoints):
     if tooltips == "Yes":
-        tooltips = True
-    elif tooltips == "No":
         tooltips = False
+    elif tooltips == "No":
+        tooltips = True
     if year != "":
-        marp = chicago_data_functions.map_chicago_crime_db(tooltips, datapoints, year, crime)
+        marp = chicago_data_functions.map_chicago_crime_db(
+            quick = tooltips, 
+            num = datapoints, 
+            year = year,
+            prim_type = crumb
+            )
         print(marp)

@@ -10,6 +10,7 @@ from django.urls import reverse
 from django.views.generic import CreateView, ListView, UpdateView
 from django.shortcuts import redirect
 from urllib.parse import urlencode
+from . import simple_graph
 
 crime_variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
                     'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \
@@ -38,6 +39,23 @@ states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', \
           'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', \
           'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', \
           'VA', 'VT', 'WA', 'WV', 'WI', 'WY']
+state_keys = {'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': \
+                 'Arkansas', 'CA': 'California', 'CO': 'Colorado', 'CT': \
+                 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': \
+                 'Georgia', 'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', \
+                 'IN': 'Indiana', 'IA': 'Iowa', 'KS': 'Kansas', 'KY': \
+                 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': \
+                 'Maryland', 'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': \
+                 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri', 'MT': \
+                 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': \
+                 'New Hampshire', 'NJ': 'New Jersey', 'NM': 'New Mexico', \
+                 'NY': 'New York', 'NC': 'North Carolina', 'ND': \
+                 'North Dakota', 'OH': 'Ohio', 'OK': 'Oklahoma', 'OR': \
+                 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': \
+                 'South Carolina', 'SD': 'South Dakota', 'TN': 'Tennessee', \
+                 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont', 'VA': \
+                 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': \
+                 'Wisconsin', 'WY': 'Wyoming', 'DC': 'District of Columbia'}
 
 def get_loc_type(request):
     if request.method == 'POST':
@@ -196,7 +214,6 @@ def load_vars_2(request):
             {'zipped': zipped})
 
 def load_graph_vars(request):
-    print(request)
     graph_vars = []
     var_type_1 = request.GET.get('variable_type_1')
     var_type_2 = request.GET.get('variable_type_2')
@@ -206,26 +223,42 @@ def load_graph_vars(request):
     loc_type_2 = request.GET.get('location_type_2')
     if loc_type_2 == 'country':
         loc_type_2 = 'national'
-    loc_1 = request.GET.get('location_1')
-    loc_2 = request.GET.get('location_2')
+    loc_1_p = request.GET.get('location_1')
+    loc_2_p = request.GET.get('location_2')
     var_1 = request.GET.get('variable_1')
     var_2 = request.GET.get('variable_2')
     graph_vars.append(('variable_type_1', var_type_1))
     graph_vars.append(('variable_type_2', var_type_2))
     graph_vars.append(('location_type_1', loc_type_1))
     graph_vars.append(('location_type_2', loc_type_2))
-    graph_vars.append(('location_1', loc_1))
-    graph_vars.append(('location_2', loc_2))
+    graph_vars.append(('location_1', loc_1_p))
+    graph_vars.append(('location_2', loc_2_p))
     graph_vars.append(('variable_1', var_1))
-    graph_vars.append(('variable_2', var_2))   
-    loc_1 = loc_1.replace('_', ' ').title()
-    loc_2 = loc_2.replace('_', ' ').title()
-    var_1 = var_1.replace('_', ' ').title()
-    var_2 = var_2.replace('_', ' ').title()
-    loaded = graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \
+    graph_vars.append(('variable_2', var_2))
+    print(loc_2_p)
+    if loc_type_1 == 'city':
+        loc_1_p = loc_1_p.split(',_')
+        loc_1_p[1] = loc_1_p[1].upper()
+        loc_1_p[0] = loc_1_p[0].title()
+        loc_1 = ', '.join(loc_1_p)
+    elif loc_type_1 == 'state':
+        loc_1 = state_keys[loc_1_p]
+    else:
+        loc_1 = loc_1.replace('_', ' ').capitalize()
+    if loc_type_2 == 'city':
+        loc_2_p = loc_2_p.split(',_')
+        loc_2_p[1] = loc_2_p[1].upper()
+        loc_2_p[0] = loc_2_p[0].title()
+        loc_2 = ', '.join(loc_2_p)
+    elif loc_type_2 == 'state':
+        loc_2 = state_keys[loc_2_p]
+    else:
+        loc_2 = loc_2.replace('_', ' ').capitalize()
+    var_1 = var_1.replace('_', ' ').capitalize()
+    var_2 = var_2.replace('_', ' ').capitalize()
+    graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \
             loc_type_2, var_2, loc_2)
-    print(loaded)
-    return render(request, 'data_us/go_to_graph.html', {'graph_vars': graph_vars, 'loaded': loaded})
+    return render(request, 'data_us/go_to_graph.html', {'graph_vars': graph_vars})
 
 def load_graph(request):
     if request.GET.get('btn'):

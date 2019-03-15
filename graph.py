@@ -31,8 +31,10 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     stat1 = stat1.replace(' ','_')
     stat2 = stat2.replace(' ','_')
     params = []
+    table1 = tables[type1][loc_type1]
 
-    if type2 != 'time':
+    if stat2 != 'time':
+        table2 = tables[type2][loc_type2]
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
             loc_type2, stat2, loc2)
         data = c.execute(query,params)
@@ -42,23 +44,26 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
                 data1.append(int(elem[0].replace(',','')))
                 data2.append(int(elem[1].replace(',','')))
-        plot(data1,pres_stat1,pres_stat2, data2=data2)
+        plot(data1,data2,pres_stat1,pres_stat2)
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
         if table1 != 'national_arrests':
             query = query + ' WHERE '+loc_type1+' = ?;'
             params = [loc1]
-            data = c.execute(query, params)
         else:
             query = query + ';'
-            data = c.execute(query, params)
-        plot(data,pres_stat1,pres_stat2)
+        data = c.execute(query, params)
+        data1 = []
+        for element in data:
+            data1.append(element)
+        data2,time = clean_data(data1)
+        plot(time, data2, pres_stat1, pres_stat2)
 
     db.close()
     return
 
-def plot(data1, stat1, stat2, data2=None):
+def plot(data1, data2, stat1, stat2):
     fig = plt.figure()
     if data2:
         plt.plot(data1,data2, color='blue', linestyle='', marker='x')
@@ -67,6 +72,7 @@ def plot(data1, stat1, stat2, data2=None):
     plt.title(stat2+' vs. '+stat1)
     plt.xlabel(stat1)
     plt.ylabel(stat2)
+    coef, r_sq = regression.lin_regression(data1,data2)
     plt.show()
 
 
@@ -131,7 +137,9 @@ def clean_data(l):
 
     rtn = [None]*return_length
     d = dict(l)
+    years = []
     for year,stat in d.items():
+        years.append(int(year))
         rtn[int(year)-first_year] = int(stat.replace(',',''))
     for i in range(len(rtn)):
         if rtn[i] == None: #specify None in case value is 0
@@ -148,7 +156,7 @@ def clean_data(l):
                 ind = i+j
                 rtn[ind] = slope*(ind-last) + rtn[last]
 
-    return rtn
+    return rtn,list(range(min(years),max(years)+1))
 
 def last_next_value(l, ind):
     '''

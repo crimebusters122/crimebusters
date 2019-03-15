@@ -21,25 +21,32 @@ def stuff(request):
             crumb = form.cleaned_data['crimefield']
             tooltips = form.cleaned_data['tooltipfield']
             datapoints = form.cleaned_data['datapointfield']
-            load_map(request, year, crumb, tooltips, datapoints)
             return HttpResponseRedirect('')
     else:
         form = InputForm()
+        return render(request, 'data_chicago/loctype.html', {'form': form})
 
-    return render(request, 'data_chicago/loctype.html', {'form': form})
-
-def load_map(request, year, crumb, tooltips, datapoints):
-    if tooltips == "Yes":
-        tooltips = False
-    elif tooltips == "No":
-        tooltips = True
-    if year != "":
-        marp = chicago_data_functions.map_chicago_crime_db(
-            quick = tooltips, 
-            num = datapoints, 
-            year = year,
-            prim_type = crumb
-            )
-        meep = marp._repr_html_()
-        print(meep)
-        return render(request, "data_chicago/marp.html", {"meep": meep})
+def load_data(request):
+    if request.method == 'POST':
+        form = InputForm(request.POST)
+        if form.is_valid():
+            year = form.cleaned_data['yearfield']
+            crumb = form.cleaned_data['crimefield']
+            tooltips = form.cleaned_data['tooltipfield']
+            datapoints = form.cleaned_data['datapointfield']
+            if tooltips == "Yes":
+                tooltips = False
+            elif tooltips == "No":
+                tooltips = True
+            if year != "":
+                marp = chicago_data_functions.map_chicago_crime_db(
+                    quick = tooltips, 
+                    num = datapoints, 
+                    year = year,
+                    prim_type = crumb
+                    )
+                meep = marp._repr_html_()
+                return render(request, "data_chicago/loctype.html", {"form": form, "meep": meep})
+                return HttpResponseRedirect('')
+    else:
+        form = InputForm()

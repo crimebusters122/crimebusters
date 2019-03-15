@@ -62,7 +62,7 @@ def plot(data1, data2=None, stat1, stat2):
     if data2:
         plt.plot(data1,data2, color='blue', linestyle='', marker='x')
     else:
-        plt.plot(data1)
+        plt.plot(data1, color='blue', linstyle='', marker='o')
     plt.title(stat2+' vs. '+stat1)
     plt.xlabel(stat1)
     plt.ylabel(stat2)

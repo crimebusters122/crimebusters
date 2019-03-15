@@ -25,6 +25,8 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     db = sql.connect(DATABASE)
     c = db.cursor()
 
+    pres_stat1 = stat1
+    pres_stat2 = stat2
     stat1 = stat1.replace(' ','_')
     stat2 = stat2.replace(' ','_')
     params = []
@@ -39,8 +41,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
                 data1.append(int(elem[0].replace(',','')))
                 data2.append(int(elem[1].replace(',','')))
-        plt.plot(data1,data2)
-        plt.show()
+        plot(data1,pres_stat1,pres_stat2, data2=data2)
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
@@ -51,11 +52,21 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         else:
             query = query + ';'
             data = c.execute(query, params)
-        plt.plot(data)
-        plt.show()
+        plot(data,pres_stat1,pres_stat2)
 
     db.close()
     return
+
+def plot(data1, stat1, stat2, data2=None):
+    fig = plt.figure()
+    if data2:
+        plt.plot(data1,data2, color='blue', linestyle='', marker='x')
+    else:
+        plt.plot(data1, color='blue', linestyle='', marker='o')
+    plt.title(stat2+' vs. '+stat1)
+    plt.xlabel(stat1)
+    plt.ylabel(stat2)
+    plt.show()
 
 
 def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):

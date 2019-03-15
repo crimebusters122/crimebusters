@@ -235,7 +235,6 @@ def load_graph_vars(request):
     graph_vars.append(('location_2', loc_2_p))
     graph_vars.append(('variable_1', var_1))
     graph_vars.append(('variable_2', var_2))
-    print(loc_2_p)
     if loc_type_1 == 'city':
         loc_1_p = loc_1_p.split(',_')
         loc_1_p[1] = loc_1_p[1].upper()
@@ -244,7 +243,7 @@ def load_graph_vars(request):
     elif loc_type_1 == 'state':
         loc_1 = state_keys[loc_1_p]
     else:
-        loc_1 = loc_1.replace('_', ' ').capitalize()
+        loc_1 = loc_1_p.replace('_', ' ').capitalize()
     if loc_type_2 == 'city':
         loc_2_p = loc_2_p.split(',_')
         loc_2_p[1] = loc_2_p[1].upper()
@@ -253,7 +252,7 @@ def load_graph_vars(request):
     elif loc_type_2 == 'state':
         loc_2 = state_keys[loc_2_p]
     else:
-        loc_2 = loc_2.replace('_', ' ').capitalize()
+        loc_2 = loc_2_p.replace('_', ' ').capitalize()
     var_1 = var_1.replace('_', ' ').capitalize()
     var_2 = var_2.replace('_', ' ').capitalize()
     graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \

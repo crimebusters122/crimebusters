@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'data_chicago',
     'data_us',
     'home',
+    'cbsite',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

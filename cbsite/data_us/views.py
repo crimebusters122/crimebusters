@@ -10,7 +10,6 @@ from django.urls import reverse
 from django.views.generic import CreateView, ListView, UpdateView
 from django.shortcuts import redirect
 from urllib.parse import urlencode
-from . import simple_graph
 
 crime_variables = ['Violent Crime Total', 'Murder and Nonnegligent Manslaughter', \
                     'Rape', 'Robbery', 'Aggravated Assault', 'Property Crime Total', \

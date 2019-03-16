@@ -253,6 +253,7 @@ def load_graph_vars(request):
         loc_2 = state_keys[loc_2_p]
     else:
         loc_2 = loc_2_p.replace('_', ' ').capitalize()
+    print(var_1)
     var_1 = var_1.replace('_', ' ').capitalize()
     var_2 = var_2.replace('_', ' ').capitalize()
     graph.make_graph(var_type_1, loc_type_1, var_1, loc_1, var_type_2, \

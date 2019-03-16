@@ -1,6 +1,7 @@
 ### Create statistic vs. statistic plots for website ###
 import sqlite3 as sql
 import matplotlib.pyplot as plt
+#import chicago_data.regression as regression
 
 
 def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
@@ -30,34 +31,43 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     stat1 = stat1.replace(' ','_')
     stat2 = stat2.replace(' ','_')
     params = []
+    table1 = tables[type1][loc_type1]
 
-    if type2 != 'time':
+    if stat2 != 'time':
+        table2 = tables[type2][loc_type2]
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
             loc_type2, stat2, loc2)
         data = c.execute(query,params)
+        print(params)
+        print(query)
         data1 = []
         data2 = []
         for elem in data:
+            print(elem)
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
                 data1.append(int(elem[0].replace(',','')))
                 data2.append(int(elem[1].replace(',','')))
-        plot(data1,pres_stat1,pres_stat2, data2=data2)
+        print(data2)
+        plot(data1,data2,pres_stat1,pres_stat2)
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
         if table1 != 'national_arrests':
             query = query + ' WHERE '+loc_type1+' = ?;'
             params = [loc1]
-            data = c.execute(query, params)
         else:
             query = query + ';'
-            data = c.execute(query, params)
-        plot(data,pres_stat1,pres_stat2)
+        data = c.execute(query, params)
+        data1 = []
+        for element in data:
+            data1.append(element)
+        data2,time = clean_data(data1)
+        plot(time, data2, pres_stat1, pres_stat2)
 
     db.close()
     return
 
-def plot(data1, stat1, stat2, data2=None):
+def plot(data1, data2, stat1, stat2):
     fig = plt.figure()
     if data2:
         plt.plot(data1,data2, color='blue', linestyle='', marker='x')
@@ -66,6 +76,7 @@ def plot(data1, stat1, stat2, data2=None):
     plt.title(stat2+' vs. '+stat1)
     plt.xlabel(stat1)
     plt.ylabel(stat2)
+    #coef, r_sq = regression.lin_regression(data1,data2)
     plt.show()
 
 
@@ -80,30 +91,29 @@ def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
 
     table1 = tables[type1][loc_type1]
     table2 = tables[type2][loc_type2]
+    n_table1 = table1 + '1'
+    n_table2 = table2 + '2'
     params = []
-    query = 'SELECT '+table1+'.'+stat1+', '+table2+'.'+stat2+' FROM '
-    if table1 == table2:
-        query = query + table1
-    else:
-        query = query+table1+' JOIN '+table2+' ON '+table1\
-        +'.Year = '+table2+'.Year'
+    query = 'SELECT '+n_table1+'.'+stat1+', '+n_table2+'.'+stat2+' FROM '
+    query = query+table1+' AS '+n_table1+' JOIN '+table2+' AS '+n_table2+\
+        ' ON '+n_table1+'.Year = '+n_table2+'.Year'
     if table1 == 'states_data':
-        query = query + ' WHERE states_data.State = ?'
+        query = query + ' WHERE states_data1.State = ?'
         params.append(loc1)
     elif table1 != 'national_arrests':
-        query = query + ' WHERE '+table1+'.City = ?'
+        query = query + ' WHERE '+n_table1+'.City = ?'
         params.append(loc1)
     elif table2 != 'national_arrests':
         query = query + ' WHERE '
     if table2 == 'states_data':
         if query[-1] == '?':
             query = query + ' AND '
-        query = query + 'states_data.State = ?;'
+        query = query + 'states_data2.State = ?;'
         params.append(loc2)
     elif table2 != 'national_arrests':
         if query[-1] == '?':
             query = query + ' AND '
-        query = query+table2+'.City = ?;'
+        query = query+n_table2+'.City = ?;'
         params.append(loc2)
     else:
         query = query + ';'
@@ -130,7 +140,9 @@ def clean_data(l):
 
     rtn = [None]*return_length
     d = dict(l)
+    years = []
     for year,stat in d.items():
+        years.append(int(year))
         rtn[int(year)-first_year] = int(stat.replace(',',''))
     for i in range(len(rtn)):
         if rtn[i] == None: #specify None in case value is 0
@@ -147,7 +159,7 @@ def clean_data(l):
                 ind = i+j
                 rtn[ind] = slope*(ind-last) + rtn[last]
 
-    return rtn
+    return rtn,list(range(min(years),max(years)+1))
 
 def last_next_value(l, ind):
     '''

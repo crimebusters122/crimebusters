@@ -91,30 +91,29 @@ def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
 
     table1 = tables[type1][loc_type1]
     table2 = tables[type2][loc_type2]
+    n_table1 = table1 + '1'
+    n_table2 = table2 + '2'
     params = []
-    query = 'SELECT '+table1+'.'+stat1+', '+table2+'.'+stat2+' FROM '
-    if table1 == table2:
-        query = query + table1
-    else:
-        query = query+table1+' JOIN '+table2+' ON '+table1\
-        +'.Year = '+table2+'.Year'
+    query = 'SELECT '+n_table1+'.'+stat1+', '+n_table2+'.'+stat2+' FROM '
+    query = query+table1+' AS '+n_table1+' JOIN '+table2+' AS '+n_table2+\
+        ' ON '+n_table1+'.Year = '+n_table2+'.Year'
     if table1 == 'states_data':
-        query = query + ' WHERE states_data.State = ?'
+        query = query + ' WHERE states_data1.State = ?'
         params.append(loc1)
     elif table1 != 'national_arrests':
-        query = query + ' WHERE '+table1+'.City = ?'
+        query = query + ' WHERE '+n_table1+'.City = ?'
         params.append(loc1)
     elif table2 != 'national_arrests':
         query = query + ' WHERE '
     if table2 == 'states_data':
         if query[-1] == '?':
             query = query + ' AND '
-        query = query + 'states_data.State = ?;'
+        query = query + 'states_data2.State = ?;'
         params.append(loc2)
     elif table2 != 'national_arrests':
         if query[-1] == '?':
             query = query + ' AND '
-        query = query+table2+'.City = ?;'
+        query = query+n_table2+'.City = ?;'
         params.append(loc2)
     else:
         query = query + ';'

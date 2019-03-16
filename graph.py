@@ -1,7 +1,7 @@
 ### Create statistic vs. statistic plots for website ###
 import sqlite3 as sql
 import matplotlib.pyplot as plt
-#import chicago_data.regression as regression
+import chicago_data.regression as regression
 
 
 def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
@@ -14,7 +14,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         type2: (string) The same as type1, but for the second statistic
         stat2: (string) The same as stat1, but for the second statistic
     '''
-    DATABASE = '/home/student/crimebusters/crimebusters/db/crimebusters_data.db'
+    DATABASE = '/home/student/crimebusters/db/crimebusters_data.db'
     ARREST = {'city' : 'bjs_city',
               'national' : 'national_arrests'}
     CRIME = {'city' : 'cities_data',
@@ -35,22 +35,16 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
 
     if stat2 != 'time':
         table2 = tables[type2][loc_type2]
-        print(stat1)
-        print(stat2)
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
             loc_type2, stat2, loc2)
-        print(params)
-        print(query)
         data = c.execute(query,params)
         data1 = []
         data2 = []
         for elem in data:
-            print(elem)
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
                 data1.append(int(elem[0].replace(',','')))
                 data2.append(int(elem[1].replace(',','')))
-        print(data2)
-        plot(data1,data2,pres_stat1,pres_stat2)
+        plot(data1,data2,pres_stat1,type1,loc1,pres_stat2,type2,loc2)
     else:
         table2 = None
         query = 'SELECT Year,'+stat1+' FROM '+table1
@@ -69,16 +63,17 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     db.close()
     return
 
-def plot(data1, data2, stat1, stat2):
+def plot(data1, data2, stat1, type1, loc1, stat2, type2, loc2):
     fig = plt.figure()
     if data2:
         plt.plot(data1,data2, color='blue', linestyle='', marker='x')
     else:
         plt.plot(data1, color='blue', linestyle='', marker='o')
     plt.title(stat2+' vs. '+stat1)
-    plt.xlabel(stat1)
-    plt.ylabel(stat2)
-    #coef, r_sq = regression.lin_regression(data1,data2)
+    plt.xlabel((stat1+' '+type1+' '+loc1).title())
+    plt.ylabel((stat2+' '+type2+' '+loc2).title())
+    beta_1, r_sq, hat_vals = regression.lin_regression(data1,data2)
+    plt.plot(data1,hat_vals, color='red', linewidth=2)
     plt.show()
 
 

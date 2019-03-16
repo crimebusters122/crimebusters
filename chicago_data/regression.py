@@ -1,7 +1,6 @@
 import numpy as np 
 import pandas as pd 
-import sqlite3
-from sklearn import linear_model
+import statsmodels.api as sm
 
 
 def lin_regression(x, y):
@@ -9,33 +8,16 @@ def lin_regression(x, y):
     Makes a linear regression between x and y
     '''
 
-    data, shape = clean_data(x, y)
+    x = sm.add_constant(x)
 
-    reg = linear_model.LinearRegression()
+    model = sm.OLS(y,x)
 
-    reg.fit(data, shape)
+    results = model.fit()
 
-    hat_vals = reg.predict(data)
+    hat_vals = results.predict()
 
-    r_sq = reg.score(hat_vals, data)
+    r_sq = results.rsquared
 
-    return(reg.coef_, r_sq, data, hat_vals)
+    beta_1 = results.params[1]
 
-
-
-
-
-def clean_data(x, y):
-    '''
-    Prepares x and y so that they are usable in a linear regression
-    '''
-
-    data = []
-    for i in range(len(x)):
-        data.append([x[i], y[i]])
-
-    data = np.array(data)
-
-    return data
-
-
+    return(beta_1, r_sq, hat_vals)

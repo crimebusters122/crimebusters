@@ -1,11 +1,69 @@
-<h2>Select Data:</h2>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,900i">
+</head>
+<style>
+body {
+    background-image: linear-gradient(#6699cc, #708090);
+    width: 100%;
+    height: 100%;
+}
 
-<form action="/data_chicago/" method="post">
-    {% csrf_token %}
-    <button type="submit">Chicago</button>
-</form>
+.header {
+    background-color: inherit;
+    font-family: 'Raleway:900i', sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    align-content: center;
+    font-style: bold;
+}
 
-<form action="/data_us/" method="post">
-    {% csrf_token %}
-    <button type="submit">United States</button>
-</form>
+.data_chi {
+    display: inline-block;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 390px;
+    font-family: 'Raleway:400', sans-serif;
+}
+
+.data_us {
+    display: inline-block;
+    text-align: right;
+    margin-top: 50px;
+    margin-left: 300px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.data_us {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-decoration-color: grey;
+}
+
+.class {
+    align-content: center;
+}
+
+</style>
+
+<div class="header">
+    <h2 style='font-weight: 399; font-size:40px;'>SELECT LOCATION</h2>
+</div>
+
+<div class="data_chi">
+    <form action="/data_chicago/" method="post">
+        {% csrf_token %}
+        <button style="font-size: 25px; font-weight: 399;font-family: 'Raleway', sans-serif;" id="data_chi" type="submit">Chicago</button>
+    </form>
+</div>
+
+<div class="data_us">
+    <form action="/data_us/" method="post">
+        {% csrf_token %}
+        <button style="font-size: 25px; font-weight: 390;font-family: 'Raleway', sans-serif;"id="data_us" type="submit">United States</button>
+    </form>
+</div>
+
+<div class="explain">
+    <p style="font-size: 15px;font-weight: 385;font-family: 'Raleway', sans-serif; color: black; text-align: center;">Select CHICAGO to view an interactive map of the city of Chicago showing crime data of your choosing.</p>
+    <p style="font-size: 15px;font-weight: 385;font-family: 'Raleway', sans-serif; color: black; text-align: center; margin-right:20px; margin-left:20px;">Select UNITED STATES to choose two locations (United States, states, or cities) and compare different crime or arrest statistics between them.</p>
+</body>

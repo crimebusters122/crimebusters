@@ -14,7 +14,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         type2: (string) The same as type1, but for the second statistic
         stat2: (string) The same as stat1, but for the second statistic
     '''
-    DATABASE = './db/crimebusters_data.db'
+    DATABASE = '/home/student/crimebusters/crimebusters/db/crimebusters_data.db'
     ARREST = {'city' : 'bjs_city',
               'national' : 'national_arrests'}
     CRIME = {'city' : 'cities_data',

@@ -35,11 +35,13 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
 
     if stat2 != 'time':
         table2 = tables[type2][loc_type2]
+        print(stat1)
+        print(stat2)
         query, params = make_query(type1, loc_type1, stat1, loc1, type2, \
             loc_type2, stat2, loc2)
-        data = c.execute(query,params)
         print(params)
         print(query)
+        data = c.execute(query,params)
         data1 = []
         data2 = []
         for elem in data:
@@ -94,7 +96,7 @@ def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     n_table1 = table1 + '1'
     n_table2 = table2 + '2'
     params = []
-    query = 'SELECT '+n_table1+'.'+stat1+', '+n_table2+'.'+stat2+' FROM '
+    query = 'SELECT '+n_table1+'."'+stat1+'", '+n_table2+'."'+stat2+'" FROM '
     query = query+table1+' AS '+n_table1+' JOIN '+table2+' AS '+n_table2+\
         ' ON '+n_table1+'.Year = '+n_table2+'.Year'
     if table1 == 'states_data':

@@ -25,7 +25,7 @@ def map_chicago_crime_db(
         A Folium map object
     '''
 
-    data_base_path = '/home/axemanscrums/crimebusters/db/chicago_crime.db'
+    data_base_path = '/home/student/crimebusters/chicago_db/chicago_crime.db'
     chicago_coordinates = (41.881832, -87.623177)
 
     db_connection = sqlite3.connect(data_base_path)

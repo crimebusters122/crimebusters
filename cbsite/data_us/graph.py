@@ -3,7 +3,6 @@ import sqlite3 as sql
 import matplotlib.pyplot as plt
 from . import regression
 
-
 def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     '''
     Create the graph comparing the two statistics
@@ -14,7 +13,7 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         type2: (string) The same as type1, but for the second statistic
         stat2: (string) The same as stat1, but for the second statistic
     '''
-    DATABASE = '/home/student/crimebusters/crimebusters/db/crimebusters_data.db'
+    DATABASE = '/home/student/crimebusters/us_db/crimebusters_data.db'
     ARREST = {'city' : 'bjs_city',
               'national' : 'national_arrests'}
     CRIME = {'city' : 'cities_data',
@@ -42,8 +41,14 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
         data2 = []
         for elem in data:
             if (elem[0] != 'nan') and (elem[1] != 'nan'):
-                data1.append(int(elem[0].replace(',','')))
-                data2.append(int(elem[1].replace(',','')))
+                if type(elem[0]) == str:
+                    data1.append(int(elem[0].replace(',','')))
+                else:
+                    data1.append(elem[0])
+                if type(elem[1]) == str:
+                    data2.append(int(elem[1].replace(',','')))
+                else:
+                    data2.append(elem[1])
         plot(data1,data2,pres_stat1,type1,loc1,pres_stat2,type2,loc2)
     else:
         table2 = None
@@ -65,7 +70,18 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
 
 def plot(data1, data2, stat1, type1, loc1, stat2, type2, loc2):
     '''
-    Makes a matplotlib plot from our inputs.
+    Plots the given data and its linear regression, shows the graph
+    in a pop-up window
+
+    Inputs:
+        data1: (list) The list of data (ints) to plot on the x-axis
+        data2: (list) A list of same size (ints) as data1 to plot on the y-axis
+        stat1: (string) The statistic associated with data1
+        type1: (string) The type of stat1 (crime or arrest)
+        loc1: (string) The location associated with data1 (ie: 'Chicago, IL')
+        stat2: (string) The statistic associated with data2
+        type2: (string) The type of stat2 (crime or arrest)
+        loc2: (string) The location associated with data2
     '''
     fig = plt.figure()
     if data2:
@@ -75,16 +91,26 @@ def plot(data1, data2, stat1, type1, loc1, stat2, type2, loc2):
     plt.title(stat2+' vs. '+stat1)
     beta_1, r_sq, hat_vals = regression.lin_regression(data1,data2)
     plt.plot(data1,hat_vals, color='red', linewidth=2)
-    plt.xlabel((stat1+' '+type1+' '+loc1).title()+\
+    plt.xlabel((stat1).title()+'\n'+loc1.title()+' ('+type1.title()+')'\
         '\nSlope: {}\nR^2: {}'.format(beta_1,r_sq))
-    plt.ylabel((stat2+' '+type2+' '+loc2).title())
+    plt.ylabel((stat2).title()+'\n'+loc2.title()+' ('+type2.title()+')')
     plt.tight_layout()
     plt.show()
 
 
 def make_query(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
     '''
-    Constructs a database query.
+    Creates the SQLite3 query for the given data
+
+    Inputs:
+        stat1: (string) The statistic associated with data1
+        type1: (string) The type of stat1 (crime or arrest)
+        loc_type1: (string) The type of location1 (national, state, or city)
+        loc1: (string) The location associated with data1 (ie: 'Chicago, IL')
+        stat2: (string) The statistic associated with data2
+        type2: (string) The type of stat2 (crime or arrest)
+        loc_type2: (string) The type of location2 (national, state, or city)
+        loc2: (string) The location associated with data2
     '''
     ARREST = {'city' : 'bjs_city',
               'national' : 'national_arrests'}

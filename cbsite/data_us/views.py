@@ -248,6 +248,7 @@ def load_graph_vars(request):
         loc_2_p[1] = loc_2_p[1].upper()
         loc_2_p[0] = loc_2_p[0].title()
         loc_2 = ', '.join(loc_2_p)
+        loc_2 = loc_2.replace('_', ' ')
     elif loc_type_2 == 'state':
         loc_2 = state_keys[loc_2_p]
     else:

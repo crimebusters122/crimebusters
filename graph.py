@@ -45,11 +45,11 @@ def make_graph(type1, loc_type1, stat1, loc1, type2, loc_type2, stat2, loc2):
                 if type(elem[0]) == str:
                     data1.append(int(elem[0].replace(',','')))
                 else:
-                    data1.append(int(elem[0]))
+                    data1.append(elem[0])
                 if type(elem[1]) == str:
                     data2.append(int(elem[1].replace(',','')))
                 else:
-                    data2.append(int(elem[1]))
+                    data2.append(elem[1])
         plot(data1,data2,pres_stat1,type1,loc1,pres_stat2,type2,loc2)
     else:
         table2 = None

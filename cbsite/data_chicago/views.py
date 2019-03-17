@@ -11,7 +11,11 @@ from django.views.generic import CreateView, ListView
 from django.shortcuts import render_to_response
 from . import chicago_data_functions
 
-def stuff(request):
+def make_form(request):
+    '''
+    This is the initial loader for the form. It just makes the form and 
+    calls the Django template.
+    '''
     if request.method == 'POST':
         form = InputForm(request.POST)
         if form.is_valid():
@@ -25,6 +29,10 @@ def stuff(request):
         return render(request, 'data_chicago/mapchoices.html', {'form': form})
 
 def load_data(request):
+    '''
+    Loads the map from our request. Gets the inputs from the form and calls
+    the folium map making function.
+    '''
     if request.method == 'POST':
         form = InputForm(request.POST)
         if form.is_valid():
@@ -40,15 +48,15 @@ def load_data(request):
                 tooltips = False
             elif tooltips == "no":
                 tooltips = True
-            if year != "":
-                marp = chicago_data_functions.map_chicago_crime_db(
-                    quick = tooltips, 
-                    num = datapoints, 
-                    year = year,
-                    prim_type = crumb
-                    )
-                meep = marp.get_root().render()
-                return render(request, "data_chicago/mapchoices.html", {"form": form, "meep": meep})
-                return HttpResponseRedirect('')
+            marp = chicago_data_functions.map_chicago_crime_db(
+                quick = tooltips, 
+                num = datapoints, 
+                year = year,
+                prim_type = crumb
+                )
+            meep = marp.get_root().render()
+            return render(request, "data_chicago/mapchoices.html", {
+                "form": form, "meep": meep})
+            return HttpResponseRedirect('')
     else:
         form = InputForm()

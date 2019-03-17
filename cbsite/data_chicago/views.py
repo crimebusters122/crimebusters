@@ -54,7 +54,10 @@ def load_data(request):
                 year = year,
                 prim_type = crumb
                 )
-            meep = marp.get_root().render()
+            if type(marp) != str:
+                meep = marp.get_root().render()
+            else:
+                meep = marp
             return render(request, "data_chicago/mapchoices.html", {
                 "form": form, "meep": meep})
             return HttpResponseRedirect('')

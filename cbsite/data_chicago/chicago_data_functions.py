@@ -41,7 +41,8 @@ def map_chicago_crime_db(
     print(r)
 
     data = r.fetchall()
-    print(data[0])
+    if len(data) == 0:
+        return "No such crimes exist for these parameters!"
 
     if quick:
         usable_data = []

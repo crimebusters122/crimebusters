@@ -48,6 +48,9 @@ tooltips = [('yes', 'Yes'), ('no', 'No')]
 
 
 class InputForm(forms.Form):
+    '''
+    The form class.
+    '''
     yearfield = forms.CharField(label="Year", \
                     widget=forms.Select(choices=years), required=False)
     crimefield = forms.CharField(label="Crime type", \

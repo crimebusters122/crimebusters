@@ -4,6 +4,15 @@ import sqlite3
 import pandas as pd
 
 def create_table(csv_path, database_path, table_name):
+    '''
+    Creates a table in the database for the given csv
+    WARNING: If table_name matches a current table, the table will be replaced
+
+    Inputs:
+        csv_path: (string) The path to the csv file
+        database_path: (string) The path to the database to write to
+        table_name: (string) The name of the table to be created
+    '''
     db = sqlite3.connect(database_path)
     c = db.cursor()
     table = pd.read_csv(csv_path)

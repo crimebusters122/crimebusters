@@ -1,9 +1,4 @@
 from django import forms
-from django.forms import ModelForm
-from . import models
-from .models import LocationType1, Location1, VariableType1, VariableChoices1
-from smart_selects.db_fields import ChainedForeignKey
-import sqlite3
 
 
 years = [('ALL YEARS', 'ALL YEARS'), ('2001', '2001'), ('2002', '2002'), ('2003', '2003'), ('2004', '2004'),
@@ -49,7 +44,7 @@ crimes = [('ALL CRIMES', 'ALL CRIMES'),
  ('NON - CRIMINAL', 'NON - CRIMINAL'),
  ('DOMESTIC VIOLENCE', 'DOMESTIC VIOLENCE')]
 
-tooltips = [('yes', 'yes'), ('no', 'no')]
+tooltips = [('yes', 'Yes'), ('no', 'No')]
 
 
 class InputForm(forms.Form):

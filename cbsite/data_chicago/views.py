@@ -4,8 +4,6 @@ from django.http import HttpResponseRedirect
 
 import folium
 
-from . import models
-from .models import LocationType1
 from .forms import InputForm
 import sqlite3
 from django.urls import reverse_lazy
@@ -24,7 +22,7 @@ def stuff(request):
             return HttpResponseRedirect('')
     else:
         form = InputForm()
-        return render(request, 'data_chicago/loctype.html', {'form': form})
+        return render(request, 'data_chicago/mapchoices.html', {'form': form})
 
 def load_data(request):
     if request.method == 'POST':
@@ -50,7 +48,7 @@ def load_data(request):
                     prim_type = crumb
                     )
                 meep = marp.get_root().render()
-                return render(request, "data_chicago/loctype.html", {"form": form, "meep": meep})
+                return render(request, "data_chicago/mapchoices.html", {"form": form, "meep": meep})
                 return HttpResponseRedirect('')
     else:
         form = InputForm()

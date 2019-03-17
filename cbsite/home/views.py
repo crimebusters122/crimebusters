@@ -10,7 +10,7 @@ def get_data(request):
         form = DataForm(request.POST)
         if form.is_valid():
             form.save(commit=True)
-        return HttpResponseRedirect('/data_us/')
+        return HttpResponseRedirect('')
     else:
         form = DataForm()
     return render(request, 'home/homepage.html', {'form': form})

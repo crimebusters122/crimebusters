@@ -1,0 +1,217 @@
+
+{% block content %}
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400">
+</head>
+<style>
+body {
+    background-image: linear-gradient(#6699cc, #708090);
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: inherit;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    align-content: center;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.choice_1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.choice_2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.explain {
+    font-family: 'Raleway', sans-serif;
+}
+</style>
+
+
+
+<body>
+<div class="header">
+    <h2 style="font-weight: 385; font-size: 40px;">SELECT DATA</h2>
+</div>
+
+<div class="choice_1">
+    <h2 style="font-weight: 385; margin-left:10px;">Choice 1</h2>
+    <form style="font-weight: 375; margin-left:10px; margin-right:10px;" id="Choice1Form" method="post" data-locs-1-url="{% url 'ajax_load_locs_1' %}" data-var-types-1-url="{% url 'ajax_load_var_types_1' %}" data-vars-1-url="{% url 'ajax_load_vars_1' %}" novalidate>
+        {% csrf_token %}
+        {{ form_1 }}
+    </form>
+</div>
+
+<div class="choice_2">
+    <h2 style="font-weight: 385; margin-left: 10px;">Choice 2</h2>
+    <form style="font-weight: 375; margin-left:10px; margin-right: 10px;" id="Choice2Form" method="post" data-locs-2-url="{% url 'ajax_load_locs_2' %}" data-var-types-2-url="{% url 'ajax_load_var_types_2' %}" data-vars-2-url="{% url 'ajax_load_vars_2' %}" data-graph-vars-url="{% url 'ajax_load_graph_vars' %}" novalidate>
+        {% csrf_token %}
+        {{ form_2 }}
+        <form id="Graph" action="{% url 'ajax_load_graph_vars' %}" method='POST'>
+        </form>
+    </form>
+</div>
+
+</div class="explain">
+    <p style="font-size:15px; font-weight:100; font-family: 'Raleway', sans-serif; margin-right: 5%; margin-left: 5%; margin-top: 5%">Choose your desired location types, locations, variable types, and variables to see a scatterplot comparing the two statistics. To see the change in one variable over time, choose the same location and in the second choice, choose "Time" as your variable. If you are not viewing time as a variable, the graph will contain 14 points, one for each year 2001-2014, showing the correlation between the two variables.</p> 
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_1").css({"font-family":"'Raleway', sans-serif","font-weight":"400"}).change(function () {
+      var url = $("#Choice1Form").attr("data-locs-1-url");
+      var loc_type_1 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_1': loc_type_1
+        },
+        success: function ( data ) {
+            $("#id_location_1").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_1").change(function () {
+      var url = $("#Choice1Form").attr("data-var-types-1-url");
+      var loc_type_1 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_1': loc_type_1
+        },
+        success: function ( data ) {
+            $("#id_variable_type_1").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_type_1").change(function () {
+      var url = $("#Choice1Form").attr("data-vars-1-url");
+      var var_type_1 = $(this).val();
+      var loc_type_1 = $("#id_location_type_1").val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_1': var_type_1,
+            'location_type_1': loc_type_1
+        },
+        success: function ( data ) {
+            $("#id_variable_1").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_2").css({"font-family":"'Raleway', sans-serif","font-weight":"400"}).change(function () {
+      var url = $("#Choice2Form").attr("data-locs-2-url");
+      var loc_type_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_2': loc_type_2
+        },
+        success: function ( data ) {
+            $("#id_location_2").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_location_type_2").change(function () {
+      var url = $("#Choice2Form").attr("data-var-types-2-url");
+      var loc_type_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'location_type_2': loc_type_2
+        },
+        success: function ( data ) {
+            $("#id_variable_type_2").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_type_2").change(function () {
+      var url = $("#Choice2Form").attr("data-vars-2-url");
+      var var_type_1 = $("#id_variable_type_1").val();
+      var var_type_2 = $(this).val();
+      var loc_type_1 = $("#id_location_type_1").val();
+      var loc_type_2 = $("#id_location_type_2").val();
+      var loc_1 = $("#id_location_1").val();
+      var loc_2 = $("#id_location_2").val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_1': var_type_1,
+            'variable_type_2': var_type_2,
+            'location_type_1': loc_type_1,
+            'location_type_2': loc_type_2,
+            'location_1': loc_1,
+            'location_2': loc_2
+        },
+        success: function ( data ) {
+            $("#id_variable_2").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $("#id_variable_2").change(function () {
+      var url = $("#Choice2Form").attr("data-graph-vars-url");
+      var var_type_1 = $("#id_variable_type_1").val();
+      var var_type_2 = $("#id_variable_type_2").val();
+      var loc_type_1 = $("#id_location_type_1").val();
+      var loc_type_2 = $("#id_location_type_2").val();
+      var loc_1 = $("#id_location_1").val();
+      var loc_2 = $("#id_location_2").val();
+      var var_1 = $("#id_variable_1").val();
+      var var_2 = $(this).val();
+
+      $.ajax({
+        url: url,
+        data: {
+            'variable_type_1': var_type_1,
+            'variable_type_2': var_type_2,
+            'location_type_1': loc_type_1,
+            'location_type_2': loc_type_2,
+            'location_1': loc_1,
+            'location_2': loc_2,
+            'variable_1': var_1,
+            'variable_2': var_2
+        },
+        success: function ( data ) {
+            $("#Submit").html(data).css({"font-family":"'Raleway', sans-serif","font-weight":"400"});
+        }
+      });
+    });
+</script>
+
+</body>
+{% endblock %}

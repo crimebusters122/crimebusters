@@ -12,5 +12,4 @@ urlpatterns = [
         name='ajax_load_var_types_2'),
     path('ajax/load-vars-2/', views.load_vars_2, name='ajax_load_vars_2'),
     path('ajax/load-graph-vars/', views.load_graph_vars, name='ajax_load_graph_vars'),
-    path('ajax/load-graph/', views.load_graph, name='ajax_load_graph'),
 ]

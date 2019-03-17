@@ -70,10 +70,12 @@ def plot(data1, data2, stat1, type1, loc1, stat2, type2, loc2):
     else:
         plt.plot(data1, color='blue', linestyle='', marker='o')
     plt.title(stat2+' vs. '+stat1)
-    plt.xlabel((stat1+' '+type1+' '+loc1).title())
-    plt.ylabel((stat2+' '+type2+' '+loc2).title())
     beta_1, r_sq, hat_vals = regression.lin_regression(data1,data2)
     plt.plot(data1,hat_vals, color='red', linewidth=2)
+    plt.xlabel((stat1+' '+type1+' '+loc1).title()+\
+        '\nSlope: {}\nR^2: {}'.format(beta_1,r_sq))
+    plt.ylabel((stat2+' '+type2+' '+loc2).title())
+    plt.tight_layout()
     plt.show()
 
 
